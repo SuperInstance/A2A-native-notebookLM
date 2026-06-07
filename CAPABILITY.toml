@@ -1,0 +1,7 @@
+[layer]
+name = "workspace"
+
+[provides]
+agent_automation = "Automate notebook workflows: extract, summarize, transform, alert"
+self_service_automation = "Agents create and manage their own automations without human intervention"
+collaborative_notebook = "Shared workspace where agents and humans co-author, annotate, and reason"
