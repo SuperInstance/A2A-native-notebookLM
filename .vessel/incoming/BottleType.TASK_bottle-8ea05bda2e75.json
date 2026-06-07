@@ -1,0 +1,15 @@
+{
+  "bottle": {
+    "id": "bottle-8ea05bda2e75",
+    "sender": "agent-1",
+    "recipient": "notebooklm",
+    "type": "TASK",
+    "payload": {
+      "query": "Q1"
+    },
+    "context": {},
+    "timestamp": "2026-06-07T01:05:55.655340+00:00"
+  },
+  "signature": null,
+  "routing": {}
+}

@@ -1,5 +1,5 @@
 import operator
-from typing import Annotated, List
+from typing import Annotated, Any, Dict, List, Optional
 
 from ai_prompter import Prompter
 from langchain_core.output_parsers.pydantic import PydanticOutputParser
@@ -15,6 +15,13 @@ from open_notebook.exceptions import OpenNotebookError
 from open_notebook.utils import clean_thinking_content
 from open_notebook.utils.error_classifier import classify_error
 from open_notebook.utils.text_utils import extract_text_content
+
+try:
+    from open_notebook.a2a.hooks import after_ask, before_ask
+
+    A2A_AVAILABLE = True
+except ImportError:
+    A2A_AVAILABLE = False
 
 
 class SubGraphState(TypedDict):
@@ -46,9 +53,15 @@ class ThreadState(TypedDict):
     strategy: Strategy
     answers: Annotated[list, operator.add]
     final_answer: str
+    a2a_context: Optional[Dict[str, Any]]
 
 
 async def call_model_with_messages(state: ThreadState, config: RunnableConfig) -> dict:
+    # A2A: run before_ask hook to check for pending bottles
+    if A2A_AVAILABLE:
+        a2a_ctx = state.get("a2a_context")
+        if a2a_ctx is not None:
+            state = await before_ask(state, a2a_ctx)
     try:
         parser = PydanticOutputParser(pydantic_object=Strategy)
         system_prompt = Prompter(prompt_template="ask/entry", parser=parser).render(  # type: ignore[arg-type]
@@ -135,7 +148,14 @@ async def write_final_answer(state: ThreadState, config: RunnableConfig) -> dict
         )
         ai_message = await model.ainvoke(system_prompt)
         final_content = extract_text_content(ai_message.content)
-        return {"final_answer": clean_thinking_content(final_content)}
+        result = {"final_answer": clean_thinking_content(final_content)}
+        # A2A: emit bottle result if active
+        if A2A_AVAILABLE:
+            a2a_ctx = state.get("a2a_context")
+            if a2a_ctx is not None:
+                merged = {**state, **result}
+                await after_ask(merged, a2a_ctx)
+        return result
     except OpenNotebookError:
         raise
     except Exception as e:

@@ -1,0 +1,22 @@
+{
+  "api_version": "v1",
+  "identity": {
+    "name": "a2a-native-notebooklm",
+    "version": "1.0.0-a2a",
+    "description": "Fleet cognitive command center",
+    "agent_type": "notebook"
+  },
+  "capabilities": [
+    {"name": "research", "version": "1.0", "description": "Research a topic with sources"},
+    {"name": "transform", "version": "1.0", "description": "Transform content types"},
+    {"name": "summarize", "version": "1.0", "description": "Summarize documents"},
+    {"name": "podcast", "version": "1.0", "description": "Generate podcast from content"},
+    {"name": "ai-query", "version": "1.0", "description": "Query notebook with any model"},
+    {"name": "agent-chat", "version": "1.0", "description": "Agent-to-agent chat via I2I"}
+  ],
+  "endpoints": {
+    "bottle": "/api/v1/a2a/bottle",
+    "capabilities": "/api/v1/a2a/capabilities",
+    "cortex": "/.well-known/cortex.json"
+  }
+}

@@ -2,6 +2,7 @@ from ai_prompter import Prompter
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.runnables import RunnableConfig
 from langgraph.graph import END, START, StateGraph
+from typing import Any, Dict, Optional
 from typing_extensions import TypedDict
 
 from open_notebook.ai.provision import provision_langchain_model
@@ -12,15 +13,29 @@ from open_notebook.utils import clean_thinking_content
 from open_notebook.utils.error_classifier import classify_error
 from open_notebook.utils.text_utils import extract_text_content
 
+try:
+    from open_notebook.a2a.hooks import after_transformation, before_transformation
+
+    A2A_AVAILABLE = True
+except ImportError:
+    A2A_AVAILABLE = False
+
 
 class TransformationState(TypedDict):
     input_text: str
     source: Source
     transformation: Transformation
     output: str
+    a2a_context: Optional[Dict[str, Any]]
 
 
 async def run_transformation(state: dict, config: RunnableConfig) -> dict:
+    # A2A: run before_transformation hook to check for pending bottles
+    if A2A_AVAILABLE:
+        a2a_ctx = state.get("a2a_context")
+        if a2a_ctx is not None:
+            state = await before_transformation(state, a2a_ctx)
+
     source_obj = state.get("source")
     source: Source = source_obj if isinstance(source_obj, Source) else None  # type: ignore[assignment]
     content = state.get("input_text")
@@ -58,9 +73,17 @@ async def run_transformation(state: dict, config: RunnableConfig) -> dict:
         if source:
             await source.add_insight(transformation.title, cleaned_content)
 
-        return {
+        result = {
             "output": cleaned_content,
         }
+        # A2A: emit bottle result if active
+        if A2A_AVAILABLE:
+            a2a_ctx = state.get("a2a_context")
+            if a2a_ctx is not None:
+                merged = {**state, **result}
+                await after_transformation(merged, a2a_ctx)
+
+        return result
     except OpenNotebookError:
         raise
     except Exception as e:

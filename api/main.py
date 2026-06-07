@@ -13,6 +13,10 @@ from loguru import logger
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from api.auth import PasswordAuthMiddleware
+from open_notebook.i2i import router as i2i_router
+from open_notebook.i2i import _well_known_router as i2i_well_known_router
+from open_notebook.i2i import start_poller as i2i_start_poller
+from open_notebook.i2i import stop_poller as i2i_stop_poller
 from api.routers import (
     auth,
     chat,
@@ -145,6 +149,14 @@ async def lifespan(app: FastAPI):
         logger.warning(f"Podcast profile migration encountered errors: {e}")
         # Non-fatal: profiles can be migrated manually via UI
 
+    # I2I Vessel-native: start the background FS poller
+    i2i_poller_task = None
+    try:
+        i2i_poller_task = i2i_start_poller()
+        logger.success("I2I vessel FS poller started")
+    except Exception as e:
+        logger.warning(f"I2I vessel FS poller failed to start: {e}")
+
     logger.success("API initialization completed successfully")
 
     # Yield control to the application
@@ -152,6 +164,9 @@ async def lifespan(app: FastAPI):
 
     # Shutdown: cleanup if needed
     logger.info("API shutdown complete")
+    if i2i_poller_task is not None:
+        await i2i_stop_poller()
+        logger.info("I2I vessel FS poller stopped")
 
 
 app = FastAPI(
@@ -171,7 +186,7 @@ else:
     logger.info(f"CORS allowed origins: {CORS_ALLOWED_ORIGINS}")
 
 # Add password authentication middleware first
-# Exclude /api/auth/status and /api/config from authentication
+# Exclude /api/auth/status, /api/config, and all I2I endpoints from authentication
 app.add_middleware(
     PasswordAuthMiddleware,
     excluded_paths=[
@@ -182,6 +197,10 @@ app.add_middleware(
         "/redoc",
         "/api/auth/status",
         "/api/config",
+        "/.well-known/cortex.json",
+        "/api/v1/i2i/status",
+        "/api/v1/i2i/bottle",
+        "/api/v1/i2i/bottles",
     ],
 )
 
@@ -310,6 +329,10 @@ app.include_router(chat.router, prefix="/api", tags=["chat"])
 app.include_router(source_chat.router, prefix="/api", tags=["source-chat"])
 app.include_router(credentials.router, prefix="/api", tags=["credentials"])
 app.include_router(languages.router, prefix="/api", tags=["languages"])
+
+# Include I2I vessel-native router
+app.include_router(i2i_router, tags=["i2i"])
+app.include_router(i2i_well_known_router, tags=["i2i-well-known"])
 
 
 @app.get("/")

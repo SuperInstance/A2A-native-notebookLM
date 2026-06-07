@@ -13,6 +13,15 @@ import uvicorn
 current_dir = Path(__file__).parent
 sys.path.insert(0, str(current_dir))
 
+# Import the I2I vessel-native package to ensure it's registered
+# before the FastAPI app is created.
+try:
+    import open_notebook.i2i  # noqa: F401
+    print("I2I vessel-native package loaded")
+except ImportError as e:
+    print(f"Warning: I2I package not available ({e})")
+    pass
+
 if __name__ == "__main__":
     # Default configuration
     host = os.getenv("API_HOST", "127.0.0.1")

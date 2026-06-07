@@ -1,0 +1,15 @@
+{
+  "bottle": {
+    "id": "bottle-c1bfcfb399b9",
+    "sender": "test-agent",
+    "recipient": "notebooklm",
+    "type": "TASK",
+    "payload": {
+      "query": "Test question?"
+    },
+    "context": {},
+    "timestamp": "2026-06-07T01:07:07.178452+00:00"
+  },
+  "signature": null,
+  "routing": {}
+}
