@@ -36,6 +36,8 @@ from api.routers import (
     transformations,
 )
 from api.routers import commands as commands_router
+from open_notebook.a2a.server import a2a_router
+from open_notebook.a2a.agent_card import register_agent_card
 from open_notebook.database.async_migrate import AsyncMigrationManager
 from open_notebook.exceptions import (
     AuthenticationError,
@@ -182,6 +184,9 @@ app.add_middleware(
         "/redoc",
         "/api/auth/status",
         "/api/config",
+        "/a2a",
+        "/a2a/.well-known/agent.json",
+        "/.well-known/agent.json",
     ],
 )
 
@@ -310,6 +315,10 @@ app.include_router(chat.router, prefix="/api", tags=["chat"])
 app.include_router(source_chat.router, prefix="/api", tags=["source-chat"])
 app.include_router(credentials.router, prefix="/api", tags=["credentials"])
 app.include_router(languages.router, prefix="/api", tags=["languages"])
+
+# A2A protocol layer
+app.include_router(a2a_router)
+register_agent_card(app)
 
 
 @app.get("/")
