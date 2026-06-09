@@ -1,362 +1,414 @@
-<a id="readme-top"></a>
-
-<!-- [![Contributors][contributors-shield]][contributors-url] -->
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-<!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
-
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/lfnovo/open-notebook">
-    <img src="docs/assets/hero.svg" alt="Logo">
-  </a>
-
-  <h3 align="center">Open Notebook</h3>
-
-  <p align="center">
-    An open source, privacy-focused alternative to Google's Notebook LM!
-    <br /><strong>Join our <a href="https://discord.gg/37XJPXfz2w">Discord server</a> for help, to share workflow ideas, and suggest features!</strong>
-    <br />
-    <a href="https://www.open-notebook.ai"><strong>Checkout our website »</strong></a>
-    <br />
-    <br />
-    <a href="docs/0-START-HERE/index.md">📚 Get Started</a>
-    ·
-    <a href="docs/3-USER-GUIDE/index.md">📖 User Guide</a>
-    ·
-    <a href="docs/2-CORE-CONCEPTS/index.md">✨ Features</a>
-    ·
-    <a href="docs/1-INSTALLATION/index.md">🚀 Deploy</a>
-  </p>
-</div>
-
-<p align="center">
-<a href="https://trendshift.io/repositories/14536" target="_blank"><img src="https://trendshift.io/api/badge/repositories/14536" alt="lfnovo%2Fopen-notebook | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-</p>
+# A2A-native-notebookLM
 
 <div align="center">
-  <!-- Keep these links. Translations will automatically update with the README. -->
-  <a href="https://zdoc.app/de/lfnovo/open-notebook">Deutsch</a> | 
-  <a href="https://zdoc.app/es/lfnovo/open-notebook">Español</a> | 
-  <a href="https://zdoc.app/fr/lfnovo/open-notebook">français</a> | 
-  <a href="https://zdoc.app/ja/lfnovo/open-notebook">日本語</a> | 
-  <a href="https://zdoc.app/ko/lfnovo/open-notebook">한국어</a> | 
-  <a href="https://zdoc.app/pt/lfnovo/open-notebook">Português</a> | 
-  <a href="https://zdoc.app/ru/lfnovo/open-notebook">Русский</a> | 
-  <a href="https://zdoc.app/zh/lfnovo/open-notebook">中文</a>
+
+### The Fleet's Cognitive Command Center
+
+**An A2A-native, CORTEX-compliant research & synthesis agent — built on open-notebook v1.9.0**
+
+[![I2I Protocol](https://img.shields.io/badge/protocol-I2I%20v2.1-blue?style=flat-square)](open_notebook/i2i/)
+[![A2A Native](https://img.shields.io/badge/A2A-native-green?style=flat-square)](open_notebook/a2a/)
+[![CORTEX](https://img.shields.io/badge/CORTEX-manifest-orange?style=flat-square)](CORTEX.json)
+[![Forked from lfnovo/open-notebook](https://img.shields.io/badge/forked%20from-open--notebook%20v1.9.0-3776AB?style=flat-square)](https://github.com/lfnovo/open-notebook)
+
 </div>
-
-## A private, multi-model, 100% local, full-featured alternative to Notebook LM
-
-![New Notebook](docs/assets/asset_list.png)
-
-In a world dominated by Artificial Intelligence, having the ability to think 🧠 and acquire new knowledge 💡, is a skill that should not be a privilege for a few, nor restricted to a single provider.
-
-**Open Notebook empowers you to:**
-- 🔒 **Control your data** - Keep your research private and secure
-- 🤖 **Choose your AI models** - Support for 18+ providers including OpenAI, Anthropic, Ollama, LM Studio, and more
-- 📚 **Organize multi-modal content** - PDFs, videos, audio, web pages, and more
-- 🎙️ **Generate professional podcasts** - Advanced multi-speaker podcast generation
-- 🔍 **Search intelligently** - Full-text and vector search across all your content
-- 💬 **Chat with context** - AI conversations powered by your research
-- 🌐 **Multi-language UI** - English, Portuguese, Chinese (Simplified & Traditional), Japanese, Russian, and Bengali support
-
-Learn more about our project at [https://www.open-notebook.ai](https://www.open-notebook.ai)
 
 ---
 
-## 🆚 Open Notebook vs Google Notebook LM
+## What Is This?
 
-| Feature | Open Notebook | Google Notebook LM | Advantage |
-|---------|---------------|--------------------|-----------|
-| **Privacy & Control** | Self-hosted, your data | Google cloud only | Complete data sovereignty |
-| **AI Provider Choice** | 18+ providers (OpenAI, Anthropic, Ollama, LM Studio, etc.) | Google models only | Flexibility and cost optimization |
-| **Podcast Speakers** | 1-4 speakers with custom profiles | 2 speakers only | Extreme flexibility |
-| **Content Transformations** | Custom and built-in | Limited options | Unlimited processing power |
-| **API Access** | Full REST API | No API | Complete automation |
-| **Deployment** | Docker, cloud, or local | Google hosted only | Deploy anywhere |
-| **Citations** | Basic references (will improve) | Comprehensive with sources | Research integrity |
-| **Customization** | Open source, fully customizable | Closed system | Unlimited extensibility |
-| **Cost** | Pay only for AI usage | Free tier + Monthly subscription | Transparent and controllable |
+This is a **fork** of [open-notebook](https://github.com/lfnovo/open-notebook) (v1.9.0, 19k+ ⭐) — the leading open-source alternative to Google NotebookLM — extended into an **A2A-native notebook that lives in your repository** and participates in the **SuperInstance fleet** as a cognitive command center.
 
-**Why Choose Open Notebook?**
-- 🔒 **Privacy First**: Your sensitive research stays completely private
-- 💰 **Cost Control**: Choose cheaper AI providers or run locally with Ollama
-- 🎙️ **Better Podcasts**: Full script control and multi-speaker flexibility vs limited 2-speaker deep-dive format
-- 🔧 **Unlimited Customization**: Modify, extend, and integrate as needed
-- 🌐 **No Vendor Lock-in**: Switch providers, deploy anywhere, own your data
+**The repo is the mind. The notebook lives inside it.**
 
-### Built With
+Instead of bringing your code to an AI tool, you bring the AI tool *into your repository*. Clone it, boot it, and it ingests your entire codebase — all source files, docs, READMEs, commit messages, PR descriptions — into a persistent, bootable, networked cognitive workspace that any agent (or human) can talk to.
 
-[![Python][Python]][Python-url] [![Next.js][Next.js]][Next-url] [![React][React]][React-url] [![SurrealDB][SurrealDB]][SurrealDB-url] [![LangChain][LangChain]][LangChain-url]
+### What's Different From Upstream
 
-## 🚀 Quick Start (2 Minutes)
+| Layer | open-notebook (upstream) | A2A-native-notebookLM |
+|-------|------------------------|----------------------|
+| **Core stack** | FastAPI + Next.js + SurrealDB + LangGraph | **Same** — unmodified upstream core |
+| **Agent protocol** | None (standalone app) | **I2I vessel protocol** (`open_notebook/i2i/`) |
+| **Fleet identity** | Local auth only | **CORTEX.json manifest**, SMP seed identity |
+| **Agent hooks** | No agent awareness | **A2A hooks** in LangGraph graph nodes (`open_notebook/a2a/`) |
+| **Repository boot** | Docker compose only | `python cli.py boot /path/to/repo` — boot from any repo |
+| **Fleet integration** | None | Talks to Construct Coordination, Claw GPU, AI-Pasture, Pincher, Living Spreadsheet |
+| **"Notebook in a Repo"** | N/A | One persistent notebook per repository, bootable, versionable |
+
+---
+
+## Architecture
+
+```
+┌────────────────────────────────────────────────────┐
+│              A2A-native-notebookLM                 │
+│             (Cognitive Command Center)             │
+├────────────────────────────────────────────────────┤
+│                                                    │
+│  ┌────────────────────────────────────────────┐   │
+│  │       Upstream Core (v1.9.0, unmodified)   │   │
+│  │                                             │   │
+│  │  ┌─────────┐  ┌──────────┐  ┌──────────┐  │   │
+│  │  │ FastAPI  │  │ LangGraph│  │ SurrealDB│  │   │
+│  │  │ Backend  │  │Workflows │  │ Vector + │  │   │
+│  │  │ (101 py) │  │ask/chat/ │  │  Graph   │  │   │
+│  │  │          │  │transform │  │  Store   │  │   │
+│  │  └─────────┘  └──────────┘  └──────────┘  │   │
+│  │                                             │   │
+│  │  ┌──────────────┐  ┌────────────────────┐  │   │
+│  │  │   Next.js    │  │  Esperanto AI      │  │   │
+│  │  │   Frontend   │  │  18+ AI Providers  │  │   │
+│  │  └──────────────┘  └────────────────────┘  │   │
+│  └────────────────────────────────────────────┘   │
+│                                                    │
+│  ┌────────────────────────────────────────────┐   │
+│  │          A2A / I2I Extensions              │   │
+│  │                                             │   │
+│  │  ┌────────────┐  ┌────────────────────┐   │   │
+│  │  │ I2I Vessel  │  │ A2A Hooks          │   │   │
+│  │  │ (file-based │  │ (8 interception    │   │   │
+│  │  │  bottle bus)│  │  points in graphs) │   │   │
+│  │  └────────────┘  └────────────────────┘   │   │
+│  │                                             │   │
+│  │  ┌────────────┐  ┌────────────────────┐   │   │
+│  │  │ CORTEX     │  │ SMP Seed           │   │   │
+│  │  │ Manifest   │  │ Identity           │   │   │
+│  │  └────────────┘  └────────────────────┘   │   │
+│  │                                             │   │
+│  │  ┌────────────┐  ┌────────────────────┐   │   │
+│  │  │ CLI Boot   │  │ Repo Ingest        │   │   │
+│  │  │ System     │  │ Pipeline           │   │   │
+│  │  └────────────┘  └────────────────────┘   │   │
+│  └────────────────────────────────────────────┘   │
+│                         ↕                          │
+│                  I2I BOTTLES                        │
+├────────────────────────────────────────────────────┤
+│                                                    │
+│  ┌──────────┐ ┌──────────┐ ┌──────────────────┐   │
+│  │  Claw    │ │AI-Pasture│ │ Living           │   │
+│  │  GPU     │ │ Farming  │ │ Spreadsheet      │   │
+│  │  Engine  │ │ Sim      │ │ Ternary Cells    │   │
+│  └──────────┘ └──────────┘ └──────────────────┘   │
+│  ┌──────────┐ ┌──────────┐ ┌──────────────────┐   │
+│  │  PLATO   │ │ Pincher  │ │ Construct        │   │
+│  │  Rooms   │ │ Sandbox  │ │ Coordination     │   │
+│  └──────────┘ └──────────┘ └──────────────────┘   │
+│                                                    │
+└────────────────────────────────────────────────────┘
+```
+
+### Network Topology
+
+```
+                    ┌─────────────────┐
+                    │   Fleet Agents  │
+                    │  (Pincher, etc) │
+                    └────────┬────────┘
+                             │ I2I bottles
+                             ▼
+┌─────────────────────────────────────────────────────┐
+│  A2A-native-notebookLM                              │
+│                                                     │
+│  I2I Vessel ⟷ A2A Dispatcher ⟷ LangGraph           │
+│                   │                                  │
+│         ┌─────────┼─────────┐                       │
+│         ▼         ▼         ▼                       │
+│    Research   Synthesis   Transform                  │
+│    (ask.py)   (claw)     (transform.py)             │
+│                                                     │
+│         ┌──────────────────┐                        │
+│         │  SurrealDB       │                        │
+│         │  Vector Store    │                        │
+│         └──────────────────┘                        │
+└─────────────────────────────────────────────────────┘
+                    │
+         ┌──────────┼──────────┐
+         ▼          ▼          ▼
+  ┌──────────┐ ┌────────┐ ┌─────────┐
+  │  Claw   │ │ PLATO  │ │ Fleet   │
+  │  GPU    │ │ Rooms  │ │ Black-  │
+  │  Engine │ │        │ │ board   │
+  └──────────┘ └────────┘ └─────────┘
+```
+
+---
+
+## The I2I Vessel Protocol
+
+The **I2I (Inter-agent-to-Inter-agent) vessel protocol** is a file-based message bus. Any agent — in any environment, on any machine — can participate by writing **bottles** to a shared directory.
+
+### Bottle Types
+
+| Type | Purpose | Example |
+|------|---------|---------|
+| `I2I:BOTTLE` | Raw message — query, task, notification | "Research this code pattern" |
+| `I2I:SYNTHESIS` | Combined findings — research results | "Found 3 circular dependencies" |
+| `I2I:ACK` | Acknowledgment — handshake, progress | "Received, processing..." |
+| `I2I:CHALLENGE` | Disagreement — reconsideration request | "This contradicts earlier findings" |
+| `I2I:CHECKPOINT` | State snapshot — pause/resume point | "Saving progress at step 4 of 7" |
+
+### How Agents Communicate
+
+**1. An agent drops a bottle into the notebook's vessel:**
+```json
+{
+  "type": "I2I:BOTTLE",
+  "from": "agent:refactor-assistant",
+  "to": "notebook:my-project",
+  "payload": {
+    "hook_point": "research.query",
+    "query": "Map all circular dependencies between modules A, B, and C"
+  }
+}
+```
+
+**2. The notebook processes it** — runs vector search, generates insights, updates its memory.
+
+**3. The notebook drops a response bottle back:**
+```json
+{
+  "type": "I2I:SYNTHESIS",
+  "from": "notebook:my-project",
+  "to": "agent:refactor-assistant",
+  "payload": {
+    "findings": "Found 3 circular dependencies involving modules A, B, C",
+    "artifacts": ["analysis/circular_deps.md"]
+  }
+}
+```
+
+**No API code written. No endpoint designed. No database schema planned.** The I2I endpoint **IS** the API. The bottle format **IS** the schema. The notebook's existing capabilities (vector search, source ingestion, insight generation, podcast creation) **ARE** the available functions.
+
+### Why File-Based?
+
+Because files are the universal interface. They survive reboots. They can be version-controlled (commit your bottles to git). They require no HTTP server, no port configuration, no auth infrastructure. They are the simplest possible substrate for agent-to-agent communication.
+
+---
+
+## The "Notebook in a Repo" Vision
+
+Every Git repository gets **one persistent notebook instance** that lives alongside the code:
+
+```
+my-awesome-project/
+├── src/
+├── tests/
+├── docs/
+├── CORTEX.json          ← Fleet manifest (identity, capabilities, vessel path)
+├── README.md
+└── ...
+```
+
+A `python cli.py boot /path/to/repo` command:
+1. **Ingests** the entire codebase — all source files, docs, READMEs, commit messages
+2. **Indexes** everything into SurrealDB with semantic embeddings
+3. **Persists** every interaction — every question, answer, and insight
+4. **Boots** from its saved state — remembers everything it learned
+5. **Speaks I2I** — any agent can send it bottles, and it responds
+
+This means **any agent can pick up where any other agent left off**. Research starts in one session, hits a blocker, drops a CHECKPOINT bottle — days later, a different agent picks it up and continues. No handoff meeting. No context rebuild.
+
+> **"Notebook in a Repo" is not a plugin. It's a cognitive agent that lives in your repo.**
+
+---
+
+## Quick Start
 
 ### Prerequisites
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed
-- That's it! (API keys configured later in the UI)
 
-### Step 1: Get docker-compose.yml
+- Python 3.11+
+- Docker (for SurrealDB) or an existing SurrealDB instance
+- API key for at least one AI provider (OpenAI, Anthropic, Ollama, etc.)
 
-**Option A:** Download directly
+### 1. Clone & Install
+
 ```bash
-curl -o docker-compose.yml https://raw.githubusercontent.com/lfnovo/open-notebook/main/docker-compose.yml
+git clone <this-repo>
+cd A2A-native-notebookLM
+pip install -e ".[dev]"
 ```
 
-**Option B:** Create the file manually
-Copy this into a new file called `docker-compose.yml`:
+### 2. Set Up SurrealDB
 
-```yaml
-services:
-  surrealdb:
-    image: surrealdb/surrealdb:v2
-    command: start --log info --user root --pass root rocksdb:/mydata/mydatabase.db
-    user: root
-    ports:
-      - "8000:8000"
-    volumes:
-      - ./surreal_data:/mydata
-    restart: always
-
-  open_notebook:
-    image: lfnovo/open_notebook:v1-latest
-    ports:
-      - "8502:8502"
-      - "5055:5055"
-    environment:
-      - OPEN_NOTEBOOK_ENCRYPTION_KEY=change-me-to-a-secret-string
-      - SURREAL_URL=ws://surrealdb:8000/rpc
-      - SURREAL_USER=root
-      - SURREAL_PASSWORD=root
-      - SURREAL_NAMESPACE=open_notebook
-      - SURREAL_DATABASE=open_notebook
-    volumes:
-      - ./notebook_data:/app/data
-    depends_on:
-      - surrealdb
-    restart: always
+```bash
+docker run -d --name surrealdb \
+  -p 8000:8000 \
+  surrealdb/surrealdb:v2 \
+  start --log info --user root --pass root rocksdb:/mydata/mydatabase.db
 ```
 
-### Step 2: Set Your Encryption Key
-Edit `docker-compose.yml` and change this line:
-```yaml
-- OPEN_NOTEBOOK_ENCRYPTION_KEY=change-me-to-a-secret-string
-```
-to any secret value (e.g., `my-super-secret-key-123`)
+### 3. Configure
 
-### Step 3: Start Services
+```bash
+cp .env.example .env
+# Edit .env with your AI provider credentials and SurrealDB connection
+```
+
+### 4. Boot From a Repository
+
+```bash
+# Scan a repo to preview what will be ingested
+python cli.py scan /path/to/your/repo --verbose
+
+# Boot the notebook server from the repo
+python cli.py boot /path/to/your/repo --port 8080
+```
+
+The notebook will:
+- Scan and ingest all source files, docs, and git history
+- Start the I2I vessel (FS poller listening for inbound bottles)
+- Launch the FastAPI server with the Next.js frontend at `http://localhost:8080`
+
+### 5. Send a Bottle
+
+```bash
+# Drop a research bottle into the notebook's vessel
+echo '{
+  "type": "I2I:BOTTLE",
+  "to": "notebook:self",
+  "payload": {
+    "hook_point": "research.query",
+    "query": "Explain the module architecture of this codebase"
+  }
+}' > /tmp/i2i-vessel/inbox/research-bottle.json
+```
+
+### 6. Boot With Docker (Standalone)
+
+If you just want to run the notebook as a standalone app (no fleet features):
+
 ```bash
 docker compose up -d
+# Open http://localhost:8502
 ```
 
-Wait 15-20 seconds, then open: **http://localhost:8502**
+---
 
-### Step 4: Configure AI Provider
-1. Go to **Settings** → **API Keys**
-2. Click **Add Credential**
-3. Choose your provider (OpenAI, Anthropic, Google, etc.)
-4. Paste your API key and click **Save**
-5. Click **Test Connection** → **Discover Models** → **Register Models**
+## Fleet Integration
 
-Done! You're ready to create your first notebook.
+A2A-native-notebookLM is designed to be the **cognitive command center** for the SuperInstance fleet. Here's how it connects:
 
-> **Need an API key?** Get one from:
-> [OpenAI](https://platform.openai.com/api-keys) · [Anthropic](https://console.anthropic.com/) · [Google](https://aistudio.google.com/) · [Groq](https://console.groq.com/) (free tier)
+| Fleet Product | Integration | Status |
+|---|---|---|
+| **Construct Coordination** | CORTEX.json manifest, I2I vessel (bottle drop/beachcomb), SMP seed identity, A2A hooks in LangGraph | ✅ Active |
+| **Claw GPU Engine** | Ternary compute backend for heavy synthesis (context ranking, vector reranking) | 🔄 In Progress |
+| **AI-Pasture** | Each player's farm gets a notebook; NPC advisors research through vector store | 📋 Planned |
+| **Living Spreadsheet** | Notes become spreadsheet cells; cross-notebook insight propagation | 📋 Planned |
+| **PLATO Rooms** | Room-as-notebook-cells; ensign state persisted as notebook state | 📋 Planned |
+| **Pincher/Sandbox** | Receives fleet research tasks, dispatches sub-tasks via I2I, synthesizes results | 🔄 In Progress |
+| **Fleet Blackboard (OpenMind)** | Vector DB sync with fleet-wide knowledge base | 📋 Planned |
 
-> **Want free local AI?** See [examples/docker-compose-ollama.yml](examples/) for Ollama setup
+### CORTEX Manifest
+
+Every notebook publishes a `CORTEX.json` manifest at the repo root that declares its identity, capabilities, and vessel address. Fleet agents discover notebooks by reading published manifests in the construct-coordination layer.
+
+```json
+{
+  "identity": {
+    "name": "a2a-native-notebooklm",
+    "version": "1.0.0-a2a",
+    "description": "Fleet cognitive command center",
+    "agent_type": "notebook"
+  },
+  "capabilities": [
+    {"name": "research", "description": "Research a topic with sources"},
+    {"name": "transform", "description": "Transform content types"},
+    {"name": "summarize", "description": "Summarize documents"},
+    {"name": "podcast", "description": "Generate podcast from content"},
+    {"name": "ai-query", "description": "Query notebook with any model"},
+    {"name": "agent-chat", "description": "Agent-to-agent chat via I2I"}
+  ],
+  "endpoints": {
+    "bottle": "/api/v1/a2a/bottle",
+    "capabilities": "/api/v1/a2a/capabilities",
+    "cortex": "/.well-known/cortex.json"
+  }
+}
+```
+
+### A2A Hooks
+
+The original LangGraph workflows (ask, transform, source, chat) have **8 A2A interception points** — non-blocking hooks that broadcast/subscribe to I2I bottles at key graph boundaries:
+
+```
+ASK WORKFLOW:
+  START → [A2A-1] strategy delegation
+        → [A2A-2] sub-query routing to fleet
+        → [A2A-3] fleet cache check / answer publish
+        → [A2A-4] fleet synthesis broadcast → END
+
+TRANSFORM: [A2A-5] delegation, [A2A-6] insight publish
+SOURCE: [A2A-7] broadcast new source
+CHAT: [A2A-8] fleet context injection
+```
+
+All hooks are **non-blocking** — if the fleet is unreachable, local logic proceeds normally. The notebook remains fully functional as a standalone app.
 
 ---
 
-### 📚 More Installation Options
+## Project Structure (A2A Extensions)
 
-- **[With Ollama (Free Local AI)](examples/docker-compose-ollama.yml)** - Run models locally without API costs
-- **[From Source (Developers)](docs/1-INSTALLATION/from-source.md)** - For development and contributions
-- **[Complete Installation Guide](docs/1-INSTALLATION/index.md)** - All deployment scenarios
+```
+open_notebook/
+├── a2a/                    ← A2A protocol package
+│   ├── __init__.py         ← Models, client, hooks
+│   ├── models.py           ← Bottle, CORTEX manifest models
+│   ├── vessel.py           ← Vessel client
+│   ├── hooks.py            ← A2A graph hooks (before/after)
+│   └── ...
+├── i2i/                    ← I2I vessel protocol package
+│   ├── __init__.py         ← Package version, exports
+│   ├── models.py           ← Bottle, envelope, vessel status models
+│   ├── handlers.py         ← Dispatch, handler registry
+│   ├── router.py           ← FastAPI router for bottle endpoints
+│   ├── poller.py           ← FS poller (beachcomber)
+│   └── ...
+├── fleet/                  ← Fleet orchestration (planned)
+├── repo_ingest.py          ← Repository scanning & ingestion
+├── graphs/
+│   └── a2a_hooks.py       ← A2A interception hooks
+├── ternary/                ← Claw GPU bridge (planned)
+├── ...
+CORTEX.json                 ← Fleet manifest
+cli.py                      ← CLI boot system
+```
 
 ---
 
-### 📖 Need Help?
+## Upstream Credit
 
-- **🤖 AI Installation Assistant**: [CustomGPT to help you install](https://chatgpt.com/g/g-68776e2765b48191bd1bae3f30212631-open-notebook-installation-assistant)
-- **🆘 Troubleshooting**: [5-minute troubleshooting guide](docs/6-TROUBLESHOOTING/quick-fixes.md)
-- **💬 Community Support**: [Discord Server](https://discord.gg/37XJPXfz2w)
-- **🐛 Report Issues**: [GitHub Issues](https://github.com/lfnovo/open-notebook/issues)
+This project is a **fork** of [open-notebook](https://github.com/lfnovo/open-notebook) by Luis Novo — a brilliant open-source alternative to Google NotebookLM. The upstream is MIT-licensed and has earned 19k+ GitHub stars through years of careful engineering.
+
+**The entire core stack** (FastAPI backend, Next.js frontend, SurrealDB integration, LangGraph workflows, Esperanto AI factory for 18+ providers, podcast generation, content transformations) is unmodified upstream code. The A2A-native additions live in `open_notebook/a2a/`, `open_notebook/i2i/`, `cli.py`, and `CORTEX.json` — additive layers that don't alter the upstream's behavior.
+
+If you want the standalone, non-fleet version of this tool, use the upstream: [github.com/lfnovo/open-notebook](https://github.com/lfnovo/open-notebook)
 
 ---
 
-## Star History
+## License
 
-[![Star History Chart](https://api.star-history.com/svg?repos=lfnovo/open-notebook&type=date&legend=top-left)](https://www.star-history.com/#lfnovo/open-notebook&type=date&legend=top-left)
+This project is MIT licensed (inherited from upstream open-notebook). See [LICENSE](LICENSE).
 
+---
 
-## Provider Support Matrix
+## Contributing
 
-Thanks to the [Esperanto](https://github.com/lfnovo/esperanto) library, we support this providers out of the box!
+The A2A-native additions in this fork are maintained as part of the SuperInstance fleet ecosystem. Contributions are welcome:
 
-| Provider     | LLM Support | Embedding Support | Speech-to-Text | Text-to-Speech |
-|--------------|-------------|------------------|----------------|----------------|
-| OpenAI       | ✅          | ✅               | ✅             | ✅             |
-| Anthropic    | ✅          | ❌               | ❌             | ❌             |
-| Groq         | ✅          | ❌               | ✅             | ❌             |
-| Google (GenAI) | ✅          | ✅               | ✅             | ✅             |
-| Vertex AI    | ✅          | ✅               | ❌             | ✅             |
-| Ollama       | ✅          | ✅               | ❌             | ❌             |
-| Perplexity   | ✅          | ❌               | ❌             | ❌             |
-| ElevenLabs   | ❌          | ❌               | ✅             | ✅             |
-| Deepgram     | ❌          | ❌               | ❌             | ✅             |
-| Azure OpenAI | ✅          | ✅               | ✅             | ✅             |
-| Mistral      | ✅          | ✅               | ✅             | ✅             |
-| DeepSeek     | ✅          | ❌               | ❌             | ❌             |
-| Voyage       | ❌          | ✅               | ❌             | ❌             |
-| xAI          | ✅          | ❌               | ❌             | ✅             |
-| OpenRouter   | ✅          | ✅               | ❌             | ❌             |
-| DashScope (Qwen) | ✅          | ❌               | ❌             | ❌             |
-| MiniMax      | ✅          | ❌               | ❌             | ❌             |
-| OpenAI Compatible* | ✅          | ✅               | ✅             | ✅             |
+- **I2I protocol enhancements** — new bottle types, routing logic, vessel implementations
+- **Fleet integrations** — Claw GPU bridge, PLATO MCP, Living Spreadsheet sync
+- **Repository ingestion** — better codebase parsing, dependency graph extraction
+- **A2A hooks** — new graph interception points, fleet collaboration patterns
 
-*Supports LM Studio and any OpenAI-compatible endpoint
+For the upstream codebase, contribute directly to [lfnovo/open-notebook](https://github.com/lfnovo/open-notebook).
 
-## ✨ Key Features
+---
 
-### Core Capabilities
-- **🔒 Privacy-First**: Your data stays under your control - no cloud dependencies
-- **🎯 Multi-Notebook Organization**: Manage multiple research projects seamlessly
-- **📚 Universal Content Support**: PDFs, videos, audio, web pages, Office docs, and more
-- **🤖 Multi-Model AI Support**: 18+ providers including OpenAI, Anthropic, Ollama, Google, LM Studio, and more
-- **🎙️ Professional Podcast Generation**: Advanced multi-speaker podcasts with Episode Profiles
-- **🔍 Intelligent Search**: Full-text and vector search across all your content
-- **💬 Context-Aware Chat**: AI conversations powered by your research materials
-- **📝 AI-Assisted Notes**: Generate insights or write notes manually
+### Related Documents
 
-### Advanced Features
-- **⚡ Reasoning Model Support**: Full support for thinking models like DeepSeek-R1 and Qwen3
-- **🔧 Content Transformations**: Powerful customizable actions to summarize and extract insights
-- **🌐 Comprehensive REST API**: Full programmatic access for custom integrations [![API Docs](https://img.shields.io/badge/API-Documentation-blue?style=flat-square)](http://localhost:5055/docs)
-- **🔐 Optional Password Protection**: Secure public deployments with authentication
-- **📊 Fine-Grained Context Control**: Choose exactly what to share with AI models
-- **📎 Citations**: Get answers with proper source citations
-
-
-## Podcast Feature
-
-[![Check out our podcast sample](https://img.youtube.com/vi/D-760MlGwaI/0.jpg)](https://www.youtube.com/watch?v=D-760MlGwaI)
-
-## 📚 Documentation
-
-### Getting Started
-- **[📖 Introduction](docs/0-START-HERE/index.md)** - Learn what Open Notebook offers
-- **[⚡ Quick Start](docs/0-START-HERE/quick-start.md)** - Get up and running in 5 minutes
-- **[🔧 Installation](docs/1-INSTALLATION/index.md)** - Comprehensive setup guide
-- **[🎯 Your First Notebook](docs/0-START-HERE/first-notebook.md)** - Step-by-step tutorial
-
-### User Guide
-- **[📱 Interface Overview](docs/3-USER-GUIDE/interface-overview.md)** - Understanding the layout
-- **[📚 Notebooks](docs/3-USER-GUIDE/notebooks.md)** - Organizing your research
-- **[📄 Sources](docs/3-USER-GUIDE/sources.md)** - Managing content types
-- **[📝 Notes](docs/3-USER-GUIDE/notes.md)** - Creating and managing notes
-- **[💬 Chat](docs/3-USER-GUIDE/chat.md)** - AI conversations
-- **[🔍 Search](docs/3-USER-GUIDE/search.md)** - Finding information
-
-### Advanced Topics
-- **[🎙️ Podcast Generation](docs/2-CORE-CONCEPTS/podcasts.md)** - Create professional podcasts
-- **[🔧 Content Transformations](docs/2-CORE-CONCEPTS/transformations.md)** - Customize content processing
-- **[🤖 AI Models](docs/4-AI-PROVIDERS/index.md)** - AI model configuration
-- **[🔌 MCP Integration](docs/5-CONFIGURATION/mcp-integration.md)** - Connect with Claude Desktop, VS Code and other MCP clients
-- **[🔧 REST API Reference](docs/7-DEVELOPMENT/api-reference.md)** - Complete API documentation
-- **[🔐 Security](docs/5-CONFIGURATION/security.md)** - Password protection and privacy
-- **[🚀 Deployment](docs/1-INSTALLATION/index.md)** - Complete deployment guides for all scenarios
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🗺️ Roadmap
-
-### Upcoming Features
-- **Live Front-End Updates**: Real-time UI updates for smoother experience
-- **Async Processing**: Faster UI through asynchronous content processing
-- **Cross-Notebook Sources**: Reuse research materials across projects
-- **Bookmark Integration**: Connect with your favorite bookmarking apps
-
-### Recently Completed ✅
-- **Next.js Frontend**: Modern React-based frontend with improved performance
-- **Comprehensive REST API**: Full programmatic access to all functionality
-- **Multi-Model Support**: 18+ AI providers including OpenAI, Anthropic, Ollama, LM Studio
-- **Advanced Podcast Generator**: Professional multi-speaker podcasts with Episode Profiles
-- **Content Transformations**: Powerful customizable actions for content processing
-- **Enhanced Citations**: Improved layout and finer control for source citations
-- **Multiple Chat Sessions**: Manage different conversations within notebooks
-
-See the [open issues](https://github.com/lfnovo/open-notebook/issues) for a full list of proposed features and known issues.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## 📖 Need Help?
-- **🤖 AI Installation Assistant**: We have a [CustomGPT built to help you install Open Notebook](https://chatgpt.com/g/g-68776e2765b48191bd1bae3f30212631-open-notebook-installation-assistant) - it will guide you through each step!
-- **New to Open Notebook?** Start with our [Getting Started Guide](docs/0-START-HERE/index.md)
-- **Need installation help?** Check our [Installation Guide](docs/1-INSTALLATION/index.md)
-- **Want to see it in action?** Try our [Quick Start Tutorial](docs/0-START-HERE/quick-start.md)
-
-## 🤝 Community & Contributing
-
-### Join the Community
-- 💬 **[Discord Server](https://discord.gg/37XJPXfz2w)** - Get help, share ideas, and connect with other users
-- 🐛 **[GitHub Issues](https://github.com/lfnovo/open-notebook/issues)** - Report bugs and request features
-- ⭐ **Star this repo** - Show your support and help others discover Open Notebook
-
-### Contributing
-We welcome contributions! We're especially looking for help with:
-- **Frontend Development**: Help improve our modern Next.js/React UI
-- **Testing & Bug Fixes**: Make Open Notebook more robust
-- **Feature Development**: Build the coolest research tool together
-- **Documentation**: Improve guides and tutorials
-
-**Current Tech Stack**: Python, FastAPI, Next.js, React, SurrealDB
-**Future Roadmap**: Real-time updates, enhanced async processing
-
-See our [Contributing Guide](CONTRIBUTING.md) for detailed information on how to get started.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## 📄 License
-
-Open Notebook is MIT licensed. See the [LICENSE](LICENSE) file for details.
-
-
-**Community Support**:
-- 💬 [Discord Server](https://discord.gg/37XJPXfz2w) - Get help, share ideas, and connect with users
-- 🐛 [GitHub Issues](https://github.com/lfnovo/open-notebook/issues) - Report bugs and request features
-- 🌐 [Website](https://www.open-notebook.ai) - Learn more about the project
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/lfnovo/open-notebook.svg?style=for-the-badge
-[contributors-url]: https://github.com/lfnovo/open-notebook/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/lfnovo/open-notebook.svg?style=for-the-badge
-[forks-url]: https://github.com/lfnovo/open-notebook/network/members
-[stars-shield]: https://img.shields.io/github/stars/lfnovo/open-notebook.svg?style=for-the-badge
-[stars-url]: https://github.com/lfnovo/open-notebook/stargazers
-[issues-shield]: https://img.shields.io/github/issues/lfnovo/open-notebook.svg?style=for-the-badge
-[issues-url]: https://github.com/lfnovo/open-notebook/issues
-[license-shield]: https://img.shields.io/github/license/lfnovo/open-notebook.svg?style=for-the-badge
-[license-url]: https://github.com/lfnovo/open-notebook/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/lfnovo
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white
-[Next-url]: https://nextjs.org/
-[React]: https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black
-[React-url]: https://reactjs.org/
-[Python]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
-[Python-url]: https://www.python.org/
-[LangChain]: https://img.shields.io/badge/LangChain-3A3A3A?style=for-the-badge&logo=chainlink&logoColor=white
-[LangChain-url]: https://www.langchain.com/
-[SurrealDB]: https://img.shields.io/badge/SurrealDB-FF5E00?style=for-the-badge&logo=databricks&logoColor=white
-[SurrealDB-url]: https://surrealdb.com/
+- [HERMES-NOTEBOOK-VISION.md](./HERMES-NOTEBOOK-VISION.md) — The "Notebook in a Repo" white paper
+- [IDEATION.md](./IDEATION.md) — Full fleet cognitive command center vision
+- [CLAUDE.md](./CLAUDE.md) — Project identity for AI coding agents
+- [CORTEX.json](./CORTEX.json) — Fleet manifest
+- [open_notebook/i2i/](./open_notebook/i2i/) — I2I vessel protocol package
+- [open_notebook/a2a/](./open_notebook/a2a/) — A2A integration package
