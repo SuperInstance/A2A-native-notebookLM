@@ -4,7 +4,7 @@ DEFINE TABLE IF NOT EXISTS source SCHEMAFULL;
 DEFINE FIELD IF NOT EXISTS
     asset
     ON TABLE source
-    FLEXIBLE TYPE option<object>;
+    TYPE option<object> FLEXIBLE;
 
 DEFINE FIELD IF NOT EXISTS title ON TABLE source TYPE option<string>;
 DEFINE FIELD IF NOT EXISTS topics ON TABLE source TYPE option<array<string>>;
@@ -172,7 +172,7 @@ DEFINE FUNCTION IF NOT EXISTS fn::vector_search($query: array<float>, $match_cou
     
 };
 
-IF array::len(select * from open_notebook:default_models) == 0 THEN
-    CREATE open_notebook:default_models SET
+IF array::len(select * from `open_notebook:default_models`) == 0 THEN
+    CREATE `open_notebook:default_models` SET
     default_chat_model= ""
 END;
