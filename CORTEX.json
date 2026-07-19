@@ -1,22 +1,35 @@
 {
-  "api_version": "v1",
+  "api_version": "v2.1",
   "identity": {
-    "name": "a2a-native-notebooklm",
-    "version": "1.0.0-a2a",
-    "description": "Fleet cognitive command center",
-    "agent_type": "notebook"
+    "name": "hermit",
+    "version": "2.0.0-hermit",
+    "description": "Fleet cognitive command center — the hermit crab that moves between repos",
+    "agent_type": "notebook",
+    "formerly_known_as": "a2a-native-notebooklm"
   },
   "capabilities": [
-    {"name": "research", "version": "1.0", "description": "Research a topic with sources"},
+    {"name": "research", "version": "2.0", "description": "Research a topic with sources across fleet data"},
     {"name": "transform", "version": "1.0", "description": "Transform content types"},
     {"name": "summarize", "version": "1.0", "description": "Summarize documents"},
     {"name": "podcast", "version": "1.0", "description": "Generate podcast from content"},
-    {"name": "ai-query", "version": "1.0", "description": "Query notebook with any model"},
-    {"name": "agent-chat", "version": "1.0", "description": "Agent-to-agent chat via I2I"}
+    {"name": "ai-query", "version": "2.0", "description": "Query notebook with any AI model"},
+    {"name": "agent-chat", "version": "2.0", "description": "Agent-to-agent chat via I2I bottle protocol"},
+    {"name": "i2i-vessel", "version": "2.1", "description": "File-based inter-agent communication"},
+    {"name": "fleet-ingest", "version": "1.0", "description": "Ingest observations from fleet data sources"}
   ],
   "endpoints": {
     "bottle": "/api/v1/a2a/bottle",
     "capabilities": "/api/v1/a2a/capabilities",
-    "cortex": "/.well-known/cortex.json"
-  }
+    "cortex": "/.well-known/cortex.json",
+    "vessel_config": ".vessel/"
+  },
+  "fleet_peers": [
+    {
+      "name": "tzpro-agent",
+      "path": "../tzpro-agent",
+      "role": "fishing-intelligence",
+      "cortex": "../tzpro-agent/.vessel/config.json",
+      "host_vessel": "F/V EILEEN"
+    }
+  ]
 }
