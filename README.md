@@ -297,6 +297,9 @@ A2A-native-notebookLM is designed to be the **cognitive command center** for the
 | **PLATO Rooms** | Room-as-notebook-cells; ensign state persisted as notebook state | 📋 Planned |
 | **Pincher/Sandbox** | Receives fleet research tasks, dispatches sub-tasks via I2I, synthesizes results | 🔄 In Progress |
 | **[Quilt](https://github.com/SuperInstance/quilt)** | Notebook automations project onto quilt cells (formula, AI, listener); quilt provides the reactive grid runtime | ✅ Interface defined |
+| **[Elephant](https://github.com/SuperInstance/elephant)** | Room readings (9-dial JEPA bank) as research context — a notebook knows the vibe of the room it was written in | 📋 Planned |
+| **[Collective Unconscious](https://github.com/SuperInstance/collective-unconscious)** | Notebooks research by feeling — queries over the ReadingsIndex (text + room-reading vectors), not just text | 📋 Planned |
+| **[Fleet Radio](https://github.com/SuperInstance/fleet-radio)** | Notebook research becomes broadcast material — podcast skill outputs feed the Letters segment | 📋 Planned |
 | **Fleet Blackboard (OpenMind)** | Vector DB sync with fleet-wide knowledge base | 📋 Planned |
 
 ### CORTEX Manifest
