@@ -16,11 +16,14 @@ I keep a duty log in `memory/`.
 
 | Repo | Role |
 |------|------|
+| [quilt](https://github.com/SuperInstance/quilt) | Reactive cellular runtime — the grid. NotebookLM automations map onto quilt cells (see `QUILT-COMPAT.md`). |
 | tminus-dispatcher | Temporal Heartbeat Keeper |
 | fleet-bridge | A2A Transport Operator |
 | symphony-runtime | Grammar Conductor |
 | composite-headspace | Dual-Shell Mediator |
 | i2i-bottle-agent | Bottle Postmaster |
+| collective-unconscious | Emotional vector store (RAG index for fleet memory) |
+| elephant | JEPA field-edge sensor (notebookLM's sensor cell type) |
 
 ## License
 

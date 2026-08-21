@@ -25,6 +25,18 @@
   },
   "fleet_peers": [
     {
+      "name": "quilt",
+      "path": "../quilt",
+      "role": "reactive-cellular-runtime",
+      "compat": "notebook-layer → cell projection (see QUILT-COMPAT.md)"
+    },
+    {
+      "name": "collective-unconscious",
+      "path": "../collective-unconscious",
+      "role": "emotional-vector-store",
+      "note": "RAG index — notebookLM queries flow here for fleet-memory retrieval by feeling"
+    },
+    {
       "name": "tzpro-agent",
       "path": "../tzpro-agent",
       "role": "fishing-intelligence",

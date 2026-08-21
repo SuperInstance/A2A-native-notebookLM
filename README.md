@@ -296,6 +296,7 @@ A2A-native-notebookLM is designed to be the **cognitive command center** for the
 | **Living Spreadsheet** | Notes become spreadsheet cells; cross-notebook insight propagation | 📋 Planned |
 | **PLATO Rooms** | Room-as-notebook-cells; ensign state persisted as notebook state | 📋 Planned |
 | **Pincher/Sandbox** | Receives fleet research tasks, dispatches sub-tasks via I2I, synthesizes results | 🔄 In Progress |
+| **[Quilt](https://github.com/SuperInstance/quilt)** | Notebook automations project onto quilt cells (formula, AI, listener); quilt provides the reactive grid runtime | ✅ Interface defined |
 | **Fleet Blackboard (OpenMind)** | Vector DB sync with fleet-wide knowledge base | 📋 Planned |
 
 ### CORTEX Manifest
@@ -406,6 +407,7 @@ For the upstream codebase, contribute directly to [lfnovo/open-notebook](https:/
 
 ### Related Documents
 
+- [QUILT-COMPAT.md](./QUILT-COMPAT.md) — **Quilt compatibility: how notebookLM automations map onto quilt cells**
 - [HERMES-NOTEBOOK-VISION.md](./HERMES-NOTEBOOK-VISION.md) — The "Notebook in a Repo" white paper
 - [IDEATION.md](./IDEATION.md) — Full fleet cognitive command center vision
 - [CLAUDE.md](./CLAUDE.md) — Project identity for AI coding agents
