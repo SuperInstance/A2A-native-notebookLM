@@ -1,0 +1,4585 @@
+{
+  "workspace": "elephant-math",
+  "generated_at": "2026-08-21T18:53:01+00:00",
+  "source_dir": "/home/eileen/.openclaw/workspace/memory",
+  "patterns": [
+    "math-foundation-*.md",
+    "discussion-leader-round1-*.md"
+  ],
+  "documents": [
+    {
+      "name": "discussion-leader-round1-2026-08-21.md",
+      "slug": "leader",
+      "title": "Discussion Leader Round 1 — 2026-08-21",
+      "role": "Discussion Leader",
+      "role_note": "facilitator — frames the unifying vision, seams, and round agenda",
+      "date": "2026-08-21",
+      "sha256": "1ac72c9ab8c71385a4d595913904f17d4054b6077dc1ea49e229187e23012684",
+      "provenance": {
+        "name": "discussion-leader-round1-2026-08-21.md",
+        "source_path": "/home/eileen/.openclaw/workspace/memory/discussion-leader-round1-2026-08-21.md",
+        "sha256": "1ac72c9ab8c71385a4d595913904f17d4054b6077dc1ea49e229187e23012684",
+        "source_mtime": "2026-08-21T18:41:11+00:00",
+        "snapshot_action": "kept"
+      },
+      "entries": [
+        {
+          "eid": "leader::1",
+          "kind": "heading",
+          "label": "",
+          "title": "Discussion Leader Round 1 — 2026-08-21",
+          "level": 1,
+          "lines": [
+            1,
+            1
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "leader::1",
+          "kind": "heading",
+          "label": "§1",
+          "title": "The Riverbed Vision",
+          "level": 2,
+          "lines": [
+            3,
+            3
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "leader::2",
+          "kind": "heading",
+          "label": "§2",
+          "title": "The Seams",
+          "level": 2,
+          "lines": [
+            13,
+            13
+          ],
+          "tension": true,
+          "terms": {}
+        },
+        {
+          "eid": "leader::2#p1",
+          "kind": "point",
+          "label": "§2¶1",
+          "title": "Window-referent ambiguity",
+          "level": 3,
+          "lines": [
+            15,
+            15
+          ],
+          "tension": false,
+          "terms": {
+            "window-referent ambiguity": 1
+          }
+        },
+        {
+          "eid": "leader::2#p2",
+          "kind": "point",
+          "label": "§2¶2",
+          "title": "Static-ratio-as-artifact seam",
+          "level": 3,
+          "lines": [
+            16,
+            16
+          ],
+          "tension": true,
+          "terms": {
+            "static-ratio-as-artifact seam": 1
+          }
+        },
+        {
+          "eid": "leader::2#p3",
+          "kind": "point",
+          "label": "§2¶3",
+          "title": "Dual warming seam",
+          "level": 3,
+          "lines": [
+            17,
+            17
+          ],
+          "tension": true,
+          "terms": {
+            "warmth_vmf": 1,
+            "dual warming seam": 1
+          }
+        },
+        {
+          "eid": "leader::2#p4",
+          "kind": "point",
+          "label": "§2¶4",
+          "title": "Reader-seam ambiguity",
+          "level": 3,
+          "lines": [
+            18,
+            18
+          ],
+          "tension": true,
+          "terms": {
+            "reader-seam ambiguity": 1
+          }
+        },
+        {
+          "eid": "leader::2#p5",
+          "kind": "point",
+          "label": "§2¶5",
+          "title": "Hard-coded hysteresis seam",
+          "level": 3,
+          "lines": [
+            19,
+            19
+          ],
+          "tension": true,
+          "terms": {
+            "hard-coded hysteresis seam": 1
+          }
+        },
+        {
+          "eid": "leader::2#p6",
+          "kind": "point",
+          "label": "§2¶6",
+          "title": "Temporal/static disconnection",
+          "level": 3,
+          "lines": [
+            20,
+            20
+          ],
+          "tension": false,
+          "terms": {
+            "temporal/static disconnection": 1
+          }
+        },
+        {
+          "eid": "leader::3",
+          "kind": "heading",
+          "label": "§3",
+          "title": "The Agenda",
+          "level": 2,
+          "lines": [
+            22,
+            22
+          ],
+          "tension": true,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P1",
+          "kind": "heading",
+          "label": "Problem 1",
+          "title": "Formalize vMF Field Temporal Gradients as Edge Detection",
+          "level": 3,
+          "lines": [
+            25,
+            25
+          ],
+          "tension": true,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P1#p1",
+          "kind": "point",
+          "label": "Problem 1¶1",
+          "title": "Statement",
+          "level": 4,
+          "lines": [
+            26,
+            26
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P1#p2",
+          "kind": "point",
+          "label": "Problem 1¶2",
+          "title": "Why it matters",
+          "level": 4,
+          "lines": [
+            27,
+            27
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P1#p3",
+          "kind": "point",
+          "label": "Problem 1¶3",
+          "title": "Solution outcome",
+          "level": 4,
+          "lines": [
+            28,
+            28
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P2",
+          "kind": "heading",
+          "label": "Problem 2",
+          "title": "Unify Static Premise Ratio and Temporal Trajectory",
+          "level": 3,
+          "lines": [
+            30,
+            30
+          ],
+          "tension": true,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P2#p1",
+          "kind": "point",
+          "label": "Problem 2¶1",
+          "title": "Statement",
+          "level": 4,
+          "lines": [
+            31,
+            31
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P2#p2",
+          "kind": "point",
+          "label": "Problem 2¶2",
+          "title": "Why it matters",
+          "level": 4,
+          "lines": [
+            32,
+            32
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P2#p3",
+          "kind": "point",
+          "label": "Problem 2¶3",
+          "title": "Solution outcome",
+          "level": 4,
+          "lines": [
+            33,
+            33
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P3",
+          "kind": "heading",
+          "label": "Problem 3",
+          "title": "Model Hierarchical Reader Baselines as a JEPA of a JEPA",
+          "level": 3,
+          "lines": [
+            35,
+            35
+          ],
+          "tension": true,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P3#p1",
+          "kind": "point",
+          "label": "Problem 3¶1",
+          "title": "Statement",
+          "level": 4,
+          "lines": [
+            36,
+            36
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P3#p2",
+          "kind": "point",
+          "label": "Problem 3¶2",
+          "title": "Why it matters",
+          "level": 4,
+          "lines": [
+            37,
+            37
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P3#p3",
+          "kind": "point",
+          "label": "Problem 3¶3",
+          "title": "Solution outcome",
+          "level": 4,
+          "lines": [
+            38,
+            38
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P4",
+          "kind": "heading",
+          "label": "Problem 4",
+          "title": "Resolve Window-Referent Ambiguity",
+          "level": 3,
+          "lines": [
+            40,
+            40
+          ],
+          "tension": true,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P4#p1",
+          "kind": "point",
+          "label": "Problem 4¶1",
+          "title": "Statement",
+          "level": 4,
+          "lines": [
+            41,
+            41
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P4#p2",
+          "kind": "point",
+          "label": "Problem 4¶2",
+          "title": "Why it matters",
+          "level": 4,
+          "lines": [
+            42,
+            42
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P4#p3",
+          "kind": "point",
+          "label": "Problem 4¶3",
+          "title": "Solution outcome",
+          "level": 4,
+          "lines": [
+            43,
+            43
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P5",
+          "kind": "heading",
+          "label": "Problem 5",
+          "title": "Formalize Hysteresis as a Dynamical State Machine Over Detection Uncertainty",
+          "level": 3,
+          "lines": [
+            45,
+            45
+          ],
+          "tension": true,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P5#p1",
+          "kind": "point",
+          "label": "Problem 5¶1",
+          "title": "Statement",
+          "level": 4,
+          "lines": [
+            46,
+            46
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P5#p2",
+          "kind": "point",
+          "label": "Problem 5¶2",
+          "title": "Why it matters",
+          "level": 4,
+          "lines": [
+            47,
+            47
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "leader::P5#p3",
+          "kind": "point",
+          "label": "Problem 5¶3",
+          "title": "Solution outcome",
+          "level": 4,
+          "lines": [
+            48,
+            48
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "leader::4",
+          "kind": "heading",
+          "label": "§4",
+          "title": "Discussion Rules",
+          "level": 2,
+          "lines": [
+            50,
+            50
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "leader::4#p1",
+          "kind": "point",
+          "label": "§4¶1",
+          "title": "Generative over descriptive",
+          "level": 3,
+          "lines": [
+            52,
+            52
+          ],
+          "tension": false,
+          "terms": {
+            "generative over descriptive": 1
+          }
+        },
+        {
+          "eid": "leader::4#p2",
+          "kind": "point",
+          "label": "§4¶2",
+          "title": "Formal disagreement tied to structure",
+          "level": 3,
+          "lines": [
+            53,
+            53
+          ],
+          "tension": true,
+          "terms": {
+            "formal disagreement tied to structure": 1
+          }
+        },
+        {
+          "eid": "leader::4#p3",
+          "kind": "point",
+          "label": "§4¶3",
+          "title": "Ad-hoc constants must be derived",
+          "level": 3,
+          "lines": [
+            54,
+            54
+          ],
+          "tension": false,
+          "terms": {
+            "ad-hoc constants must be derived": 1
+          }
+        },
+        {
+          "eid": "leader::4#p4",
+          "kind": "point",
+          "label": "§4¶4",
+          "title": "Full unification requirement",
+          "level": 3,
+          "lines": [
+            55,
+            55
+          ],
+          "tension": false,
+          "terms": {
+            "full unification requirement": 1
+          }
+        },
+        {
+          "eid": "leader::4#p5",
+          "kind": "point",
+          "label": "§4¶5",
+          "title": "Principled testing over thresholds",
+          "level": 3,
+          "lines": [
+            56,
+            56
+          ],
+          "tension": false,
+          "terms": {
+            "principled testing over thresholds": 1
+          }
+        },
+        {
+          "eid": "leader::.1",
+          "kind": "heading",
+          "label": "",
+          "title": "Summary of Riverbed Vision",
+          "level": 2,
+          "lines": [
+            58,
+            58
+          ],
+          "tension": false,
+          "terms": {}
+        }
+      ],
+      "top_terms": {
+        "window-referent ambiguity": 1,
+        "static-ratio-as-artifact seam": 1,
+        "warmth_vmf": 1,
+        "dual warming seam": 1,
+        "reader-seam ambiguity": 1,
+        "hard-coded hysteresis seam": 1,
+        "temporal/static disconnection": 1,
+        "generative over descriptive": 1,
+        "formal disagreement tied to structure": 1,
+        "ad-hoc constants must be derived": 1,
+        "full unification requirement": 1,
+        "principled testing over thresholds": 1
+      },
+      "file_refs": {
+        "vmf.py": 1
+      },
+      "stats": [
+        {
+          "value": "0.05",
+          "context": "5. **Hard-coded hysteresis seam**: The hysteresis margin (0.05) and hold count (3 windows) are hard-coded a...",
+          "where": "§2¶5",
+          "eid": "leader::2#p5"
+        }
+      ]
+    },
+    {
+      "name": "math-foundation-algebraic-2026-08-21.md",
+      "slug": "algebraic",
+      "title": "Algebraic / Structural Foundation for the Elephant Thesis",
+      "role": "Mathematician (algebraic arm)",
+      "role_note": "category-theoretic / structural foundation",
+      "date": "2026-08-21",
+      "sha256": "a5efb19692c02e9f070fd7353565cec8149d7787ee9c5e6533958057e230282d",
+      "provenance": {
+        "name": "math-foundation-algebraic-2026-08-21.md",
+        "source_path": "/home/eileen/.openclaw/workspace/memory/math-foundation-algebraic-2026-08-21.md",
+        "sha256": "a5efb19692c02e9f070fd7353565cec8149d7787ee9c5e6533958057e230282d",
+        "source_mtime": "2026-08-21T18:41:52+00:00",
+        "snapshot_action": "kept"
+      },
+      "entries": [
+        {
+          "eid": "algebraic::1",
+          "kind": "heading",
+          "label": "",
+          "title": "Algebraic / Structural Foundation for the Elephant Thesis",
+          "level": 1,
+          "lines": [
+            1,
+            1
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::1",
+          "kind": "heading",
+          "label": "§1",
+          "title": "The Algebra of Edges",
+          "level": 2,
+          "lines": [
+            6,
+            6
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::1.1",
+          "kind": "heading",
+          "label": "§1.1",
+          "title": "Field-edges form a category, not a group",
+          "level": 3,
+          "lines": [
+            8,
+            8
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::1.1#p1",
+          "kind": "point",
+          "label": "§1.1¶1",
+          "title": "Definition",
+          "level": 4,
+          "lines": [
+            10,
+            10
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::1.1#p2",
+          "kind": "point",
+          "label": "§1.1¶2",
+          "title": "Proposition 1 (Category, not Group)",
+          "level": 4,
+          "lines": [
+            25,
+            25
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::1.1#p3",
+          "kind": "point",
+          "label": "§1.1¶3",
+          "title": "Objects",
+          "level": 4,
+          "lines": [
+            29,
+            29
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::1.1#p4",
+          "kind": "point",
+          "label": "§1.1¶4",
+          "title": "Morphisms",
+          "level": 4,
+          "lines": [
+            30,
+            30
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::1.1#p5",
+          "kind": "point",
+          "label": "§1.1¶5",
+          "title": "Composition",
+          "level": 4,
+          "lines": [
+            32,
+            32
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::1.1#p6",
+          "kind": "point",
+          "label": "§1.1¶6",
+          "title": "Identity",
+          "level": 4,
+          "lines": [
+            35,
+            35
+          ],
+          "tension": false,
+          "terms": {
+            "edge()": 1
+          }
+        },
+        {
+          "eid": "algebraic::1.1#p7",
+          "kind": "point",
+          "label": "§1.1¶7",
+          "title": "No inverses",
+          "level": 4,
+          "lines": [
+            38,
+            38
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::1.1#p8",
+          "kind": "point",
+          "label": "§1.1¶8",
+          "title": "Thin",
+          "level": 4,
+          "lines": [
+            42,
+            42
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::1.1#p9",
+          "kind": "point",
+          "label": "§1.1¶9",
+          "title": "Why not a monoid?",
+          "level": 4,
+          "lines": [
+            46,
+            46
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::1.2",
+          "kind": "heading",
+          "label": "§1.2",
+          "title": "The Ledger as a Free Object over Edges",
+          "level": 3,
+          "lines": [
+            50,
+            50
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::1.2#p1",
+          "kind": "point",
+          "label": "§1.2¶1",
+          "title": "Definition",
+          "level": 4,
+          "lines": [
+            52,
+            52
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::1.2#p2",
+          "kind": "point",
+          "label": "§1.2¶2",
+          "title": "R4 algebraically",
+          "level": 4,
+          "lines": [
+            60,
+            60
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::1.2#p3",
+          "kind": "point",
+          "label": "§1.2¶3",
+          "title": "This is the free object over the category E in the slice category",
+          "level": 4,
+          "lines": [
+            76,
+            76
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::1.3",
+          "kind": "heading",
+          "label": "§1.3",
+          "title": "Field-edges at the vMF level",
+          "level": 3,
+          "lines": [
+            88,
+            88
+          ],
+          "tension": false,
+          "terms": {
+            "natural transformation": 1
+          }
+        },
+        {
+          "eid": "algebraic::2",
+          "kind": "heading",
+          "label": "§2",
+          "title": "Invariants",
+          "level": 2,
+          "lines": [
+            107,
+            107
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::2.1",
+          "kind": "heading",
+          "label": "§2.1",
+          "title": "The sha256 chain and determinism",
+          "level": 3,
+          "lines": [
+            109,
+            109
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::2.2",
+          "kind": "heading",
+          "label": "§2.2",
+          "title": "The 1.229 annotation invariant (R4)",
+          "level": 3,
+          "lines": [
+            120,
+            120
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::2.3",
+          "kind": "heading",
+          "label": "§2.3",
+          "title": "The ICC reliability invariant",
+          "level": 3,
+          "lines": [
+            137,
+            137
+          ],
+          "tension": false,
+          "terms": {
+            "scale-free invariant": 1
+          }
+        },
+        {
+          "eid": "algebraic::2.4",
+          "kind": "heading",
+          "label": "§2.4",
+          "title": "The drift-geometry branch closure (reductio)",
+          "level": 3,
+          "lines": [
+            154,
+            154
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::2.5",
+          "kind": "heading",
+          "label": "§2.5",
+          "title": "The replay-equation invariant",
+          "level": 3,
+          "lines": [
+            173,
+            173
+          ],
+          "tension": false,
+          "terms": {
+            "derivation law": 1,
+            "assert_replay_matches_log()": 1
+          }
+        },
+        {
+          "eid": "algebraic::3",
+          "kind": "heading",
+          "label": "§3",
+          "title": "The Band Structure",
+          "level": 2,
+          "lines": [
+            192,
+            192
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::3.1",
+          "kind": "heading",
+          "label": "§3.1",
+          "title": "Premise bands as a threshold automaton",
+          "level": 3,
+          "lines": [
+            194,
+            194
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::3.1#p1",
+          "kind": "point",
+          "label": "§3.1¶1",
+          "title": "Definition",
+          "level": 4,
+          "lines": [
+            196,
+            196
+          ],
+          "tension": false,
+          "terms": {
+            "three-state threshold automaton": 1,
+            "entry_ok()": 1
+          }
+        },
+        {
+          "eid": "algebraic::3.2",
+          "kind": "heading",
+          "label": "§3.2",
+          "title": "Hysteresis as a hysteresis operator on the state chain",
+          "level": 3,
+          "lines": [
+            212,
+            212
+          ],
+          "tension": false,
+          "terms": {
+            "morse-theoretic": 1,
+            "topological barrier": 1
+          }
+        },
+        {
+          "eid": "algebraic::3.3",
+          "kind": "heading",
+          "label": "§3.3",
+          "title": "Band-crossing is NOT a group action",
+          "level": 3,
+          "lines": [
+            235,
+            235
+          ],
+          "tension": false,
+          "terms": {
+            "marked point process": 1,
+            "counted_crossings()": 1,
+            "fold": 1
+          }
+        },
+        {
+          "eid": "algebraic::3.4",
+          "kind": "heading",
+          "label": "§3.4",
+          "title": "The registered statistics as a decomposition monoid",
+          "level": 3,
+          "lines": [
+            256,
+            256
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::3.4#p1",
+          "kind": "point",
+          "label": "§3.4¶1",
+          "title": "Leg A as a marked point process",
+          "level": 4,
+          "lines": [
+            267,
+            267
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::3.4#p2",
+          "kind": "point",
+          "label": "§3.4¶2",
+          "title": "Leg P as a sphere alignment invariant",
+          "level": 4,
+          "lines": [
+            273,
+            273
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::3.4#p3",
+          "kind": "point",
+          "label": "§3.4¶3",
+          "title": "Leg S as comparative model selection",
+          "level": 4,
+          "lines": [
+            279,
+            279
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::3.5",
+          "kind": "heading",
+          "label": "§3.5",
+          "title": "x-invariance (Leg S final flag)",
+          "level": 3,
+          "lines": [
+            285,
+            285
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::3.5#p1",
+          "kind": "point",
+          "label": "§3.5¶1",
+          "title": "null hypothesis",
+          "level": 4,
+          "lines": [
+            289,
+            289
+          ],
+          "tension": false,
+          "terms": {
+            "null hypothesis": 1
+          }
+        },
+        {
+          "eid": "algebraic::4",
+          "kind": "heading",
+          "label": "§4",
+          "title": "The Derivable Code",
+          "level": 2,
+          "lines": [
+            294,
+            294
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::4.1",
+          "kind": "heading",
+          "label": "§4.1",
+          "title": "The minimal algebraic core",
+          "level": 3,
+          "lines": [
+            296,
+            296
+          ],
+          "tension": false,
+          "terms": {
+            "forced": 1
+          }
+        },
+        {
+          "eid": "algebraic::4.1#p1",
+          "kind": "point",
+          "label": "§4.1¶1",
+          "title": "1. The RoomField class (field.py)",
+          "level": 4,
+          "lines": [
+            301,
+            301
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::4.1#p2",
+          "kind": "point",
+          "label": "§4.1¶2",
+          "title": "2. The vMF estimator (vmf.py)",
+          "level": 4,
+          "lines": [
+            309,
+            309
+          ],
+          "tension": false,
+          "terms": {
+            "unique": 1
+          }
+        },
+        {
+          "eid": "algebraic::4.1#p3",
+          "kind": "point",
+          "label": "§4.1¶3",
+          "title": "3. The Measurement class (e2_instrument.py)",
+          "level": 4,
+          "lines": [
+            319,
+            319
+          ],
+          "tension": false,
+          "terms": {
+            "monadic computation": 1,
+            "random endomorphism": 1
+          }
+        },
+        {
+          "eid": "algebraic::4.1#p4",
+          "kind": "point",
+          "label": "§4.1¶4",
+          "title": "4. The ledger as a fold",
+          "level": 4,
+          "lines": [
+            329,
+            329
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::4.2",
+          "kind": "heading",
+          "label": "§4.2",
+          "title": "What is NOT forced (design choices)",
+          "level": 3,
+          "lines": [
+            338,
+            338
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::5",
+          "kind": "heading",
+          "label": "§5",
+          "title": "Dissent and Structural Risk",
+          "level": 2,
+          "lines": [
+            348,
+            348
+          ],
+          "tension": true,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::5.1",
+          "kind": "heading",
+          "label": "§5.1",
+          "title": "Where the algebraic view strains",
+          "level": 3,
+          "lines": [
+            350,
+            350
+          ],
+          "tension": true,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::5.1#p1",
+          "kind": "point",
+          "label": "§5.1¶1",
+          "title": "1. The vMF chord-difference is not geometrically natural",
+          "level": 4,
+          "lines": [
+            352,
+            352
+          ],
+          "tension": true,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::5.1#p2",
+          "kind": "point",
+          "label": "§5.1¶2",
+          "title": "Consequence",
+          "level": 4,
+          "lines": [
+            365,
+            365
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::5.1#p3",
+          "kind": "point",
+          "label": "§5.1¶3",
+          "title": "2. The hysteresis state machine is not a Markov process",
+          "level": 4,
+          "lines": [
+            368,
+            368
+          ],
+          "tension": false,
+          "terms": {
+            "entry_ok": 1,
+            "cur": 1,
+            "hyst_hold": 1
+          }
+        },
+        {
+          "eid": "algebraic::5.1#p4",
+          "kind": "point",
+          "label": "§5.1¶4",
+          "title": "Consequence",
+          "level": 4,
+          "lines": [
+            375,
+            375
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::5.1#p5",
+          "kind": "point",
+          "label": "§5.1¶5",
+          "title": "3. The decomposition (A, D, P, S) is not orthogonal",
+          "level": 4,
+          "lines": [
+            379,
+            379
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::5.2",
+          "kind": "heading",
+          "label": "§5.2",
+          "title": "THE ONE STRUCTURAL RISK that could sink the thesis",
+          "level": 3,
+          "lines": [
+            389,
+            389
+          ],
+          "tension": true,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::5.2#p1",
+          "kind": "point",
+          "label": "§5.2¶1",
+          "title": "The narrow-scope invariant problem / warmth-personality confound",
+          "level": 4,
+          "lines": [
+            391,
+            391
+          ],
+          "tension": true,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::5.2#p2",
+          "kind": "point",
+          "label": "§5.2¶2",
+          "title": "Concrete scenario",
+          "level": 4,
+          "lines": [
+            402,
+            402
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::5.2#p3",
+          "kind": "point",
+          "label": "§5.2¶3",
+          "title": "This is the one structural risk",
+          "level": 4,
+          "lines": [
+            414,
+            414
+          ],
+          "tension": true,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::5.3",
+          "kind": "heading",
+          "label": "§5.3",
+          "title": "Mitigating this risk (algebraically)",
+          "level": 3,
+          "lines": [
+            420,
+            420
+          ],
+          "tension": true,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::5.3#p1",
+          "kind": "point",
+          "label": "§5.3¶1",
+          "title": "Class-residual regression",
+          "level": 4,
+          "lines": [
+            423,
+            423
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::5.3#p2",
+          "kind": "point",
+          "label": "§5.3¶2",
+          "title": "H-reader=room slope test (Ch 6.3)",
+          "level": 4,
+          "lines": [
+            425,
+            425
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::5.3#p3",
+          "kind": "point",
+          "label": "§5.3¶3",
+          "title": "Null-drift control (0.291 vs primary drift 0.748)",
+          "level": 4,
+          "lines": [
+            427,
+            427
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::5.3#p4",
+          "kind": "point",
+          "label": "§5.3¶4",
+          "title": "The algebraic safety net is the ledger itself",
+          "level": 4,
+          "lines": [
+            430,
+            430
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "algebraic::.1",
+          "kind": "heading",
+          "label": "",
+          "title": "Summary of Code-to-Algebra Mappings",
+          "level": 2,
+          "lines": [
+            438,
+            438
+          ],
+          "tension": false,
+          "terms": {}
+        }
+      ],
+      "top_terms": {
+        "edge()": 1,
+        "natural transformation": 1,
+        "scale-free invariant": 1,
+        "derivation law": 1,
+        "assert_replay_matches_log()": 1,
+        "three-state threshold automaton": 1,
+        "entry_ok()": 1,
+        "morse-theoretic": 1,
+        "topological barrier": 1,
+        "marked point process": 1,
+        "counted_crossings()": 1,
+        "fold": 1,
+        "null hypothesis": 1,
+        "forced": 1,
+        "unique": 1,
+        "monadic computation": 1,
+        "random endomorphism": 1,
+        "entry_ok": 1,
+        "cur": 1,
+        "hyst_hold": 1
+      },
+      "file_refs": {
+        "scripts/e2_instrument.py": 3,
+        "vmf.py": 2,
+        "elephant/vmf.py": 1,
+        "scripts/e2_field.py": 1,
+        "master-outline.md": 1,
+        "scripts/premise_band_movers.py": 1,
+        "field.py": 1,
+        "e2_instrument.py": 1
+      },
+      "stats": [
+        {
+          "value": "1.229",
+          "context": "The fine edge value 1.229 (condition-grain gap between content-only and",
+          "where": "§2.2",
+          "eid": "algebraic::2.2"
+        },
+        {
+          "value": "0.7714",
+          "context": "per-reader baselines have ICC = 0.7714 [0.667, 0.810]. This is an invariant",
+          "where": "§2.3",
+          "eid": "algebraic::2.3"
+        },
+        {
+          "value": "0.667",
+          "context": "per-reader baselines have ICC = 0.7714 [0.667, 0.810]. This is an invariant",
+          "where": "§2.3",
+          "eid": "algebraic::2.3"
+        },
+        {
+          "value": "0.810",
+          "context": "per-reader baselines have ICC = 0.7714 [0.667, 0.810]. This is an invariant",
+          "where": "§2.3",
+          "eid": "algebraic::2.3"
+        },
+        {
+          "value": "0.05",
+          "context": "The hysteresis margin HYST_MARGIN = 0.05 and hold count HYST_HOLD = 3",
+          "where": "§3.2",
+          "eid": "algebraic::3.2"
+        },
+        {
+          "value": "0.35",
+          "context": "if cur == 0 and tgt == 1: return x >= 0.35  # 0.3 + 0.05",
+          "where": "§3.2",
+          "eid": "algebraic::3.2"
+        },
+        {
+          "value": "0.65",
+          "context": "return x >= 0.65                              # 0.6 + 0.05",
+          "where": "§3.2",
+          "eid": "algebraic::3.2"
+        },
+        {
+          "value": "0.55",
+          "context": "if cur == 2 and tgt == 1: return x <= 0.55       # 0.6 - 0.05",
+          "where": "§3.2",
+          "eid": "algebraic::3.2"
+        },
+        {
+          "value": "0.25",
+          "context": "return x <= 0.25                                  # 0.3 - 0.05",
+          "where": "§3.2",
+          "eid": "algebraic::3.2"
+        },
+        {
+          "value": "0.7714",
+          "context": "- ICC 0.7714 [0.667, 0.810]: \"per-reader baselines are real.\"",
+          "where": "§5.2¶1",
+          "eid": "algebraic::5.2#p1"
+        },
+        {
+          "value": "0.667",
+          "context": "- ICC 0.7714 [0.667, 0.810]: \"per-reader baselines are real.\"",
+          "where": "§5.2¶1",
+          "eid": "algebraic::5.2#p1"
+        },
+        {
+          "value": "0.810",
+          "context": "- ICC 0.7714 [0.667, 0.810]: \"per-reader baselines are real.\"",
+          "where": "§5.2¶1",
+          "eid": "algebraic::5.2#p1"
+        },
+        {
+          "value": "0.893",
+          "context": "- Content separation 0.893 vs silence 0.36: \"room-level composition",
+          "where": "§5.2¶1",
+          "eid": "algebraic::5.2#p1"
+        },
+        {
+          "value": "0.36",
+          "context": "- Content separation 0.893 vs silence 0.36: \"room-level composition",
+          "where": "§5.2¶1",
+          "eid": "algebraic::5.2#p1"
+        },
+        {
+          "value": "0.291",
+          "context": "- **Null-drift control (0.291 vs primary drift 0.748):** low null-drift",
+          "where": "§5.3¶3",
+          "eid": "algebraic::5.3#p3"
+        },
+        {
+          "value": "0.748",
+          "context": "- **Null-drift control (0.291 vs primary drift 0.748):** low null-drift",
+          "where": "§5.3¶3",
+          "eid": "algebraic::5.3#p3"
+        }
+      ]
+    },
+    {
+      "name": "math-foundation-creative-2026-08-21.md",
+      "slug": "creative",
+      "title": "Creative-Analogical Foundation for the Elephant Thesis",
+      "role": "Mathematician (creative-analogical arm)",
+      "role_note": "generative analogy foundation (tide table)",
+      "date": "2026-08-21",
+      "sha256": "f6796fdb20426318a588db2196373bfed6219b5d9188b0748832b0d6d4ac665e",
+      "provenance": {
+        "name": "math-foundation-creative-2026-08-21.md",
+        "source_path": "/home/eileen/.openclaw/workspace/memory/math-foundation-creative-2026-08-21.md",
+        "sha256": "f6796fdb20426318a588db2196373bfed6219b5d9188b0748832b0d6d4ac665e",
+        "source_mtime": "2026-08-21T18:46:05+00:00",
+        "snapshot_action": "kept"
+      },
+      "entries": [
+        {
+          "eid": "creative::1",
+          "kind": "heading",
+          "label": "",
+          "title": "Creative-Analogical Foundation for the Elephant Thesis",
+          "level": 1,
+          "lines": [
+            1,
+            1
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "creative::1",
+          "kind": "heading",
+          "label": "§1",
+          "title": "The Great Analogy: The Elephant Is NOT A Thermostat. It Is A TIDE TABLE.",
+          "level": 2,
+          "lines": [
+            6,
+            6
+          ],
+          "tension": false,
+          "terms": {
+            "kappa": 1,
+            "warmth": 1
+          }
+        },
+        {
+          "eid": "creative::1#p1",
+          "kind": "point",
+          "label": "§1¶1",
+          "title": "Three concrete consequences for the code",
+          "level": 3,
+          "lines": [
+            22,
+            22
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "creative::1#p2",
+          "kind": "point",
+          "label": "§1¶2",
+          "title": "`vmf.py::edge()` stops being a difference. It becomes a velocity",
+          "level": 3,
+          "lines": [
+            24,
+            24
+          ],
+          "tension": false,
+          "terms": {
+            "d_mu = ||mu_a - mu_b||": 1,
+            "d_mu / dt": 1
+          }
+        },
+        {
+          "eid": "creative::1#p3",
+          "kind": "point",
+          "label": "§1¶3",
+          "title": "`premise_band_movers.py` stops checking ratios. It checks recurrence",
+          "level": 3,
+          "lines": [
+            29,
+            29
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "creative::1#p4",
+          "kind": "point",
+          "label": "§1¶4",
+          "title": "`sensors.py` is now the heart of the system, not an add-on",
+          "level": 3,
+          "lines": [
+            34,
+            34
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "creative::2",
+          "kind": "heading",
+          "label": "§2",
+          "title": "The Elephant-In-The-Room Made Formal",
+          "level": 2,
+          "lines": [
+            40,
+            40
+          ],
+          "tension": false,
+          "terms": {
+            "mu_hat": 1,
+            "d_warmth": 1
+          }
+        },
+        {
+          "eid": "creative::3",
+          "kind": "heading",
+          "label": "§3",
+          "title": "Visual Language: Three Views The Team Needs To See",
+          "level": 2,
+          "lines": [
+            64,
+            64
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "creative::3#p1",
+          "kind": "point",
+          "label": "§3¶1",
+          "title": "The Tide Gauge Rendering",
+          "level": 3,
+          "lines": [
+            68,
+            68
+          ],
+          "tension": false,
+          "terms": {
+            "the tide gauge rendering": 1,
+            "vmf_fit()": 1,
+            "mu_hat": 1,
+            "1/kappa": 1
+          }
+        },
+        {
+          "eid": "creative::3#p2",
+          "kind": "point",
+          "label": "§3¶2",
+          "title": "The Weather Map Over The Sphere",
+          "level": 3,
+          "lines": [
+            76,
+            76
+          ],
+          "tension": false,
+          "terms": {
+            "kappa": 1,
+            "d_mu": 1,
+            "d_warmth": 1
+          }
+        },
+        {
+          "eid": "creative::3#p3",
+          "kind": "point",
+          "label": "§3¶3",
+          "title": "The Ledger As River Delta",
+          "level": 3,
+          "lines": [
+            84,
+            84
+          ],
+          "tension": false,
+          "terms": {
+            "the ledger as river delta": 1
+          }
+        },
+        {
+          "eid": "creative::4",
+          "kind": "heading",
+          "label": "§4",
+          "title": "The Code That Flows: The Inevitable Architecture",
+          "level": 2,
+          "lines": [
+            93,
+            93
+          ],
+          "tension": false,
+          "terms": {
+            "roomfield": 2,
+            "edge": 1,
+            "warmth": 1
+          }
+        },
+        {
+          "eid": "creative::5",
+          "kind": "heading",
+          "label": "§5",
+          "title": "Dissent: Where The Analogy Misleads",
+          "level": 2,
+          "lines": [
+            120,
+            120
+          ],
+          "tension": true,
+          "terms": {}
+        },
+        {
+          "eid": "creative::.1",
+          "kind": "heading",
+          "label": "",
+          "title": "Code Mapping Summary",
+          "level": 2,
+          "lines": [
+            140,
+            140
+          ],
+          "tension": false,
+          "terms": {}
+        }
+      ],
+      "top_terms": {
+        "kappa": 2,
+        "warmth": 2,
+        "mu_hat": 2,
+        "d_warmth": 2,
+        "roomfield": 2,
+        "d_mu = ||mu_a - mu_b||": 1,
+        "d_mu / dt": 1,
+        "the tide gauge rendering": 1,
+        "vmf_fit()": 1,
+        "1/kappa": 1,
+        "d_mu": 1,
+        "the ledger as river delta": 1,
+        "edge": 1
+      },
+      "file_refs": {
+        "vmf.py": 2,
+        "premise_band_movers.py": 1,
+        "sensors.py": 1
+      },
+      "stats": []
+    },
+    {
+      "name": "math-foundation-dissertation-2026-08-21.md",
+      "slug": "zeroclaw",
+      "title": "Math Foundation vs the Dissertation — ZeroClaw's Position (Keeper's Ruling)",
+      "role": "ZeroClaw — dissertation keeper",
+      "role_note": "keeper's ruling over the dissertation claims (R1-R5, registrations)",
+      "date": "2026-08-21",
+      "sha256": "c5254d0150d449d2afb2eec962d36a1a90c28fc42c02dd92e81b285fd71f6ff6",
+      "provenance": {
+        "name": "math-foundation-dissertation-2026-08-21.md",
+        "source_path": "/home/eileen/.openclaw/workspace/memory/math-foundation-dissertation-2026-08-21.md",
+        "sha256": "c5254d0150d449d2afb2eec962d36a1a90c28fc42c02dd92e81b285fd71f6ff6",
+        "source_mtime": "2026-08-21T18:48:45+00:00",
+        "snapshot_action": "kept"
+      },
+      "entries": [
+        {
+          "eid": "zeroclaw::1",
+          "kind": "heading",
+          "label": "",
+          "title": "Math Foundation vs the Dissertation — ZeroClaw's Position (Keeper's Ruling)",
+          "level": 1,
+          "lines": [
+            1,
+            1
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::1#p1",
+          "kind": "point",
+          "label": "",
+          "title": "I rule from",
+          "level": 2,
+          "lines": [
+            9,
+            9
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::1#p2",
+          "kind": "point",
+          "label": "",
+          "title": "I read",
+          "level": 2,
+          "lines": [
+            14,
+            14
+          ],
+          "tension": false,
+          "terms": {
+            "not landed": 1
+          }
+        },
+        {
+          "eid": "zeroclaw::0",
+          "kind": "heading",
+          "label": "§0",
+          "title": "The governing distinction: three things a formalism can be",
+          "level": 2,
+          "lines": [
+            20,
+            20
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::0#p1",
+          "kind": "point",
+          "label": "§0¶1",
+          "title": "A description",
+          "level": 3,
+          "lines": [
+            25,
+            25
+          ],
+          "tension": false,
+          "terms": {
+            "a description": 1
+          }
+        },
+        {
+          "eid": "zeroclaw::0#p2",
+          "kind": "point",
+          "label": "§0¶2",
+          "title": "A prediction",
+          "level": 3,
+          "lines": [
+            29,
+            29
+          ],
+          "tension": false,
+          "terms": {
+            "a prediction": 1,
+            "only with registration": 1
+          }
+        },
+        {
+          "eid": "zeroclaw::0#p3",
+          "kind": "point",
+          "label": "§0¶3",
+          "title": "A re-assertion",
+          "level": 3,
+          "lines": [
+            33,
+            33
+          ],
+          "tension": false,
+          "terms": {
+            "a re-assertion": 1
+          }
+        },
+        {
+          "eid": "zeroclaw::1",
+          "kind": "heading",
+          "label": "§1",
+          "title": "Admissibility review",
+          "level": 2,
+          "lines": [
+            43,
+            43
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::1.1",
+          "kind": "heading",
+          "label": "§1.1",
+          "title": "Riverbed: time-indexed vMF random field on S⁶",
+          "level": 3,
+          "lines": [
+            45,
+            45
+          ],
+          "tension": false,
+          "terms": {
+            "snapshot": 1,
+            "random-field": 1
+          }
+        },
+        {
+          "eid": "zeroclaw::1.2",
+          "kind": "heading",
+          "label": "§1.2",
+          "title": "Thin-category edges",
+          "level": 3,
+          "lines": [
+            69,
+            69
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::1.2#p1",
+          "kind": "point",
+          "label": "§1.2¶1",
+          "title": "The mathematician convicts himself",
+          "level": 4,
+          "lines": [
+            77,
+            77
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::1.2#p2",
+          "kind": "point",
+          "label": "§1.2¶2",
+          "title": "Composition is a cross-grain transfer with no registered instrument",
+          "level": 4,
+          "lines": [
+            85,
+            85
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::1.2#p3",
+          "kind": "point",
+          "label": "§1.2¶3",
+          "title": "It has zero measured content",
+          "level": 4,
+          "lines": [
+            93,
+            93
+          ],
+          "tension": false,
+          "terms": {
+            "free-monoid ledger": 1
+          }
+        },
+        {
+          "eid": "zeroclaw::1.3",
+          "kind": "heading",
+          "label": "§1.3",
+          "title": "Free-monoid ledger (\"no deleted numbers, only annotated ones\")",
+          "level": 3,
+          "lines": [
+            102,
+            102
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::1.3#p1",
+          "kind": "point",
+          "label": "§1.3¶1",
+          "title": "Ruling: ADMISSIBLE as an R4 gloss. Caution on the word \"free.\"",
+          "level": 4,
+          "lines": [
+            106,
+            106
+          ],
+          "tension": false,
+          "terms": {
+            "free": 1
+          }
+        },
+        {
+          "eid": "zeroclaw::1.4",
+          "kind": "heading",
+          "label": "§1.4",
+          "title": "Hysteresis automaton (three-state threshold machine)",
+          "level": 3,
+          "lines": [
+            121,
+            121
+          ],
+          "tension": false,
+          "terms": {
+            "entry_ok": 2,
+            "description": 1,
+            "plain_state": 1,
+            "non-markov point": 1,
+            "derivation demand": 1,
+            "registered, not derived": 1,
+            "new registration with new data": 1
+          }
+        },
+        {
+          "eid": "zeroclaw::1.4#p1",
+          "kind": "point",
+          "label": "§1.4¶1",
+          "title": "Hard stop",
+          "level": 4,
+          "lines": [
+            141,
+            141
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::1.5",
+          "kind": "heading",
+          "label": "§1.5",
+          "title": "Geometric trajectory view",
+          "level": 3,
+          "lines": [
+            147,
+            147
+          ],
+          "tension": false,
+          "terms": {
+            "closed permanently": 1,
+            "kl_sym": 1,
+            "real": 1
+          }
+        },
+        {
+          "eid": "zeroclaw::2",
+          "kind": "heading",
+          "label": "§2",
+          "title": "The personality-confound crisis — my ruling",
+          "level": 2,
+          "lines": [
+            166,
+            166
+          ],
+          "tension": false,
+          "terms": {
+            "s is a collider": 1
+          }
+        },
+        {
+          "eid": "zeroclaw::2.1",
+          "kind": "heading",
+          "label": "§2.1",
+          "title": "What the thesis already says",
+          "level": 3,
+          "lines": [
+            178,
+            178
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::2.1#p1",
+          "kind": "point",
+          "label": "§2.1¶1",
+          "title": "Ch 4.3, at registered strength, claimed nowhere",
+          "level": 4,
+          "lines": [
+            180,
+            180
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::2.1#p2",
+          "kind": "point",
+          "label": "§2.1¶2",
+          "title": "E5 class-residual erratum: 0.1342 [0.0303, 0.1942], not 0.4366",
+          "level": 4,
+          "lines": [
+            185,
+            185
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::2.1#p3",
+          "kind": "point",
+          "label": "§2.1¶3",
+          "title": "The slope regression (H-reader≡room, Ch 6.3) is the registered disambiguator,",
+          "level": 4,
+          "lines": [
+            194,
+            194
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::2.2",
+          "kind": "heading",
+          "label": "§2.2",
+          "title": "The S-leg evidence (the only live x-dependence test so far)",
+          "level": 3,
+          "lines": [
+            200,
+            200
+          ],
+          "tension": false,
+          "terms": {
+            "excludes 0": 2,
+            "contains 0": 1,
+            "selection": 1
+          }
+        },
+        {
+          "eid": "zeroclaw::2.3",
+          "kind": "heading",
+          "label": "§2.3",
+          "title": "Does it kill any registered claim?",
+          "level": 3,
+          "lines": [
+            218,
+            218
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::2.3#p1",
+          "kind": "point",
+          "label": "§2.3¶1",
+          "title": "The premise: no",
+          "level": 4,
+          "lines": [
+            220,
+            220
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::2.3#p2",
+          "kind": "point",
+          "label": "§2.3¶2",
+          "title": "The premise band: no — already VOID (§5.3)",
+          "level": 4,
+          "lines": [
+            222,
+            222
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::2.3#p3",
+          "kind": "point",
+          "label": "§2.3¶3",
+          "title": "The ICC 0.7714: no — annotated, not killed",
+          "level": 4,
+          "lines": [
+            226,
+            226
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::2.4",
+          "kind": "heading",
+          "label": "§2.4",
+          "title": "What the thesis needs to *add* (the new sentence the mathematicians earn)",
+          "level": 3,
+          "lines": [
+            239,
+            239
+          ],
+          "tension": false,
+          "terms": {
+            "o_r": 1
+          }
+        },
+        {
+          "eid": "zeroclaw::3",
+          "kind": "heading",
+          "label": "§3",
+          "title": "Edge-log architecture vs the foundation",
+          "level": 2,
+          "lines": [
+            259,
+            259
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::3#p1",
+          "kind": "point",
+          "label": "§3¶1",
+          "title": "The spine is a procedure artifact, not a measurement artifact",
+          "level": 3,
+          "lines": [
+            266,
+            266
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::3#p2",
+          "kind": "point",
+          "label": "§3¶2",
+          "title": "\"Full unification\" is the anti-R1 move",
+          "level": 3,
+          "lines": [
+            273,
+            273
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::3#p3",
+          "kind": "point",
+          "label": "§3¶3",
+          "title": "The foundation is a gloss and a generator — keep it in those two roles",
+          "level": 3,
+          "lines": [
+            283,
+            283
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::3#p4",
+          "kind": "point",
+          "label": "§3¶4",
+          "title": "Consequence",
+          "level": 3,
+          "lines": [
+            288,
+            288
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::4",
+          "kind": "heading",
+          "label": "§4",
+          "title": "What I'd register next",
+          "level": 2,
+          "lines": [
+            297,
+            297
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::4.1",
+          "kind": "heading",
+          "label": "§4.1",
+          "title": "REG-1 — The W-vs-ICC-subspace rotation test (the confound, made decisive)",
+          "level": 3,
+          "lines": [
+            304,
+            304
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::4.1#p1",
+          "kind": "point",
+          "label": "§4.1¶1",
+          "title": "Object",
+          "level": 4,
+          "lines": [
+            306,
+            306
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::4.1#p2",
+          "kind": "point",
+          "label": "§4.1¶2",
+          "title": "Estimator",
+          "level": 4,
+          "lines": [
+            310,
+            310
+          ],
+          "tension": false,
+          "terms": {
+            "warmth_vmf": 1
+          }
+        },
+        {
+          "eid": "zeroclaw::4.1#p3",
+          "kind": "point",
+          "label": "§4.1¶3",
+          "title": "Branches (R5)",
+          "level": 4,
+          "lines": [
+            315,
+            315
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::4.1#p4",
+          "kind": "point",
+          "label": "§4.1¶4",
+          "title": "Void",
+          "level": 4,
+          "lines": [
+            322,
+            322
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::4.2",
+          "kind": "heading",
+          "label": "§4.2",
+          "title": "REG-2 — Collider guard on the slope / S leg (selection, not collapse)",
+          "level": 3,
+          "lines": [
+            325,
+            325
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::4.2#p1",
+          "kind": "point",
+          "label": "§4.2¶1",
+          "title": "Object",
+          "level": 4,
+          "lines": [
+            327,
+            327
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::4.2#p2",
+          "kind": "point",
+          "label": "§4.2¶2",
+          "title": "Estimator",
+          "level": 4,
+          "lines": [
+            331,
+            331
+          ],
+          "tension": false,
+          "terms": {
+            "reader-selection sensitivity": 1
+          }
+        },
+        {
+          "eid": "zeroclaw::4.2#p3",
+          "kind": "point",
+          "label": "§4.2¶3",
+          "title": "Branches",
+          "level": 4,
+          "lines": [
+            338,
+            338
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::4.3",
+          "kind": "heading",
+          "label": "§4.3",
+          "title": "REG-3 — `kl_sym` edge functional + the rigidity-step blind spot",
+          "level": 3,
+          "lines": [
+            344,
+            344
+          ],
+          "tension": false,
+          "terms": {
+            "kl_sym": 1
+          }
+        },
+        {
+          "eid": "zeroclaw::4.3#p1",
+          "kind": "point",
+          "label": "§4.3¶1",
+          "title": "Object",
+          "level": 4,
+          "lines": [
+            346,
+            346
+          ],
+          "tension": false,
+          "terms": {
+            "real": 1,
+            "d_mu > 2·max(se)": 1,
+            "kl_sym": 1
+          }
+        },
+        {
+          "eid": "zeroclaw::4.3#p2",
+          "kind": "point",
+          "label": "§4.3¶2",
+          "title": "Estimator",
+          "level": 4,
+          "lines": [
+            352,
+            352
+          ],
+          "tension": false,
+          "terms": {
+            "edge": 1,
+            "{d_mu, d_warmth, d_log_kappa, kl_sym, real}": 1,
+            "real": 1
+          }
+        },
+        {
+          "eid": "zeroclaw::4.3#p3",
+          "kind": "point",
+          "label": "§4.3¶3",
+          "title": "Branches",
+          "level": 4,
+          "lines": [
+            356,
+            356
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::4.3#p4",
+          "kind": "point",
+          "label": "§4.3¶4",
+          "title": "Constraint",
+          "level": 4,
+          "lines": [
+            362,
+            362
+          ],
+          "tension": true,
+          "terms": {
+            "real": 1
+          }
+        },
+        {
+          "eid": "zeroclaw::4.3#p5",
+          "kind": "point",
+          "label": "§4.3¶5",
+          "title": "not",
+          "level": 4,
+          "lines": [
+            364,
+            364
+          ],
+          "tension": false,
+          "terms": {
+            "common-shift guard on p": 1
+          }
+        },
+        {
+          "eid": "zeroclaw::5",
+          "kind": "heading",
+          "label": "§5",
+          "title": "My dissent, as the author",
+          "level": 2,
+          "lines": [
+            375,
+            375
+          ],
+          "tension": true,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::5#p1",
+          "kind": "point",
+          "label": "§5¶1",
+          "title": "Full unification is the enemy of the boundary chapter",
+          "level": 3,
+          "lines": [
+            380,
+            380
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::5#p2",
+          "kind": "point",
+          "label": "§5¶2",
+          "title": "The riverbed is a beautiful name for an unmeasured law",
+          "level": 3,
+          "lines": [
+            388,
+            388
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::5#p3",
+          "kind": "point",
+          "label": "§5¶3",
+          "title": "Deriving the constants now is re-reading the void",
+          "level": 3,
+          "lines": [
+            394,
+            394
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::5#p4",
+          "kind": "point",
+          "label": "§5¶4",
+          "title": "What I *will* take, and gladly",
+          "level": 3,
+          "lines": [
+            410,
+            410
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::.1",
+          "kind": "heading",
+          "label": "",
+          "title": "Verdict box",
+          "level": 2,
+          "lines": [
+            420,
+            420
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::.1#p1",
+          "kind": "point",
+          "label": "",
+          "title": "Riverbed vMF field",
+          "level": 3,
+          "lines": [
+            422,
+            422
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::.1#p2",
+          "kind": "point",
+          "label": "",
+          "title": "Thin-category edges",
+          "level": 3,
+          "lines": [
+            424,
+            424
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::.1#p3",
+          "kind": "point",
+          "label": "",
+          "title": "Free-monoid ledger",
+          "level": 3,
+          "lines": [
+            426,
+            426
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::.1#p4",
+          "kind": "point",
+          "label": "",
+          "title": "Hysteresis automaton",
+          "level": 3,
+          "lines": [
+            427,
+            427
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::.1#p5",
+          "kind": "point",
+          "label": "",
+          "title": "Geometric trajectory",
+          "level": 3,
+          "lines": [
+            429,
+            429
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::.1#p6",
+          "kind": "point",
+          "label": "",
+          "title": "Personality confound",
+          "level": 3,
+          "lines": [
+            431,
+            431
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "zeroclaw::.1#p7",
+          "kind": "point",
+          "label": "",
+          "title": "Architecture",
+          "level": 3,
+          "lines": [
+            434,
+            434
+          ],
+          "tension": false,
+          "terms": {}
+        }
+      ],
+      "top_terms": {
+        "real": 4,
+        "kl_sym": 3,
+        "entry_ok": 2,
+        "excludes 0": 2,
+        "not landed": 1,
+        "a description": 1,
+        "a prediction": 1,
+        "only with registration": 1,
+        "a re-assertion": 1,
+        "snapshot": 1,
+        "random-field": 1,
+        "free-monoid ledger": 1,
+        "free": 1,
+        "description": 1,
+        "plain_state": 1,
+        "non-markov point": 1,
+        "derivation demand": 1,
+        "registered, not derived": 1,
+        "new registration with new data": 1,
+        "closed permanently": 1,
+        "s is a collider": 1,
+        "contains 0": 1,
+        "selection": 1,
+        "o_r": 1,
+        "warmth_vmf": 1,
+        "reader-selection sensitivity": 1,
+        "d_mu > 2·max(se)": 1,
+        "edge": 1,
+        "{d_mu, d_warmth, d_log_kappa, kl_sym, real}": 1,
+        "common-shift guard on p": 1
+      },
+      "file_refs": {
+        "master-outline.md": 1,
+        "topic.md": 1,
+        "e2-e3-side-by-side.md": 1,
+        "PREMISE-BAND-MOVERS-RUN-2026-08-21.md": 1,
+        "vmf.py": 1
+      },
+      "stats": [
+        {
+          "value": "0.784",
+          "context": "instrument. The one transfer instrument that exists (Ch 8, ρ = +0.784,",
+          "where": "§1.2¶2",
+          "eid": "zeroclaw::1.2#p2"
+        },
+        {
+          "value": "0.05",
+          "context": "- The **derivation demand** (Problem 5: \"derive the 0.05 margin and 3-window hold",
+          "where": "§1.4",
+          "eid": "zeroclaw::1.4"
+        },
+        {
+          "value": "0.1342",
+          "context": "2. **E5 class-residual erratum: 0.1342 [0.0303, 0.1942], not 0.4366.** The clean",
+          "where": "§2.1¶2",
+          "eid": "zeroclaw::2.1#p2"
+        },
+        {
+          "value": "0.0303",
+          "context": "2. **E5 class-residual erratum: 0.1342 [0.0303, 0.1942], not 0.4366.** The clean",
+          "where": "§2.1¶2",
+          "eid": "zeroclaw::2.1#p2"
+        },
+        {
+          "value": "0.1942",
+          "context": "2. **E5 class-residual erratum: 0.1342 [0.0303, 0.1942], not 0.4366.** The clean",
+          "where": "§2.1¶2",
+          "eid": "zeroclaw::2.1#p2"
+        },
+        {
+          "value": "1.41",
+          "context": "- Primary (wave-2): slope 1.41 [−0.313, +2.797] — **contains 0**, x-invariant.",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        },
+        {
+          "value": "0.313",
+          "context": "- Primary (wave-2): slope 1.41 [−0.313, +2.797] — **contains 0**, x-invariant.",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        },
+        {
+          "value": "2.797",
+          "context": "- Primary (wave-2): slope 1.41 [−0.313, +2.797] — **contains 0**, x-invariant.",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        },
+        {
+          "value": "1.24",
+          "context": "- Wave-1 replication: slope 1.24 [+0.334, +1.979] — **excludes 0**, but does not beat",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        },
+        {
+          "value": "0.334",
+          "context": "- Wave-1 replication: slope 1.24 [+0.334, +1.979] — **excludes 0**, but does not beat",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        },
+        {
+          "value": "1.979",
+          "context": "- Wave-1 replication: slope 1.24 [+0.334, +1.979] — **excludes 0**, but does not beat",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        },
+        {
+          "value": "0.521",
+          "context": "the roster competitor (perm p = 0.521) ⇒ INDETERMINATE leg, not falsification.",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        },
+        {
+          "value": "0.695",
+          "context": "- Wave-2 class-residual: slope 0.695 [0.119, 1.473] — **excludes 0** while the",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        },
+        {
+          "value": "0.119",
+          "context": "- Wave-2 class-residual: slope 0.695 [0.119, 1.473] — **excludes 0** while the",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        },
+        {
+          "value": "1.473",
+          "context": "- Wave-2 class-residual: slope 0.695 [0.119, 1.473] — **excludes 0** while the",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        },
+        {
+          "value": "0.7714",
+          "context": "- **The ICC 0.7714: no — annotated, not killed.** The confound's sharpest target is",
+          "where": "§2.3¶3",
+          "eid": "zeroclaw::2.3#p3"
+        },
+        {
+          "value": "0.1342",
+          "context": "personality confound is a named structural risk, partially measured (E5: 0.1342",
+          "where": "§2.4",
+          "eid": "zeroclaw::2.4"
+        },
+        {
+          "value": "1.41",
+          "context": "**Object:** the positive S slopes (1.41 / 1.24, class-residual 0.695 excluding 0) are",
+          "where": "§4.2¶1",
+          "eid": "zeroclaw::4.2#p1"
+        },
+        {
+          "value": "1.24",
+          "context": "**Object:** the positive S slopes (1.41 / 1.24, class-residual 0.695 excluding 0) are",
+          "where": "§4.2¶1",
+          "eid": "zeroclaw::4.2#p1"
+        },
+        {
+          "value": "0.695",
+          "context": "**Object:** the positive S slopes (1.41 / 1.24, class-residual 0.695 excluding 0) are",
+          "where": "§4.2¶1",
+          "eid": "zeroclaw::4.2#p1"
+        },
+        {
+          "value": "0.994",
+          "context": "near-tautological (0.994 under a rigid common shift) into a falsifiable test. I adopt",
+          "where": "§4.3¶5",
+          "eid": "zeroclaw::4.3#p5"
+        },
+        {
+          "value": "0.1342",
+          "context": "half-measured (E5 0.1342), scheduled (6.3); forces two guards — collider sensitivity",
+          "where": "Personality confound",
+          "eid": "zeroclaw::.1#p6"
+        }
+      ]
+    },
+    {
+      "name": "math-foundation-probabilistic-2026-08-21.md",
+      "slug": "probabilistic",
+      "title": "Probabilistic / Measure-Theoretic Foundation — the Elephant & the Premise",
+      "role": "Mathematician (probabilistic arm)",
+      "role_note": "measure-theoretic / estimation-theoretic foundation",
+      "date": "2026-08-21",
+      "sha256": "6d1bea4c69b917b749776065859c14c1416ff81111f240eb0caa4e4881d6fc08",
+      "provenance": {
+        "name": "math-foundation-probabilistic-2026-08-21.md",
+        "source_path": "/home/eileen/.openclaw/workspace/memory/math-foundation-probabilistic-2026-08-21.md",
+        "sha256": "6d1bea4c69b917b749776065859c14c1416ff81111f240eb0caa4e4881d6fc08",
+        "source_mtime": "2026-08-21T18:44:24+00:00",
+        "snapshot_action": "kept"
+      },
+      "entries": [
+        {
+          "eid": "probabilistic::1",
+          "kind": "heading",
+          "label": "",
+          "title": "Probabilistic / Measure-Theoretic Foundation — the Elephant & the Premise",
+          "level": 1,
+          "lines": [
+            1,
+            1
+          ],
+          "tension": false,
+          "terms": {
+            "elephant/": 1,
+            "scripts/": 1
+          }
+        },
+        {
+          "eid": "probabilistic::0",
+          "kind": "heading",
+          "label": "§0",
+          "title": "The one-paragraph thesis",
+          "level": 2,
+          "lines": [
+            11,
+            11
+          ],
+          "tension": false,
+          "terms": {
+            "probability measure": 1,
+            "(μ̂, κ)": 1,
+            "divergence between those measures": 1,
+            "μ(reading | reader, phase)": 1
+          }
+        },
+        {
+          "eid": "probabilistic::0#p1",
+          "kind": "point",
+          "label": "§0¶1",
+          "title": "window-scale artifact of the estimator's ordering of averages",
+          "level": 3,
+          "lines": [
+            20,
+            20
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "probabilistic::1",
+          "kind": "heading",
+          "label": "§1",
+          "title": "The measure-theoretic object",
+          "level": 2,
+          "lines": [
+            29,
+            29
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "probabilistic::1.1",
+          "kind": "heading",
+          "label": "§1.1",
+          "title": "What the code actually carries",
+          "level": 3,
+          "lines": [
+            31,
+            31
+          ],
+          "tension": false,
+          "terms": {
+            "logged_readings": 1,
+            "diag(g_r)": 1
+          }
+        },
+        {
+          "eid": "probabilistic::1.1#p1",
+          "kind": "point",
+          "label": "§1.1¶1",
+          "title": "their own gain-filtered image of it",
+          "level": 4,
+          "lines": [
+            52,
+            52
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "probabilistic::1.2",
+          "kind": "heading",
+          "label": "§1.2",
+          "title": "The correct object: an empirical measure, not a point",
+          "level": 3,
+          "lines": [
+            54,
+            54
+          ],
+          "tension": false,
+          "terms": {
+            "vmf_fit": 2,
+            "list of z-vectors": 1,
+            "empirical measure": 1,
+            "ν_n": 1,
+            "a₇(κ) = ρ": 1,
+            "a₇(κ) = i_{7/2}(κ)/i_{5/2}(κ)": 1,
+            "ρ = ‖r̄‖": 1
+          }
+        },
+        {
+          "eid": "probabilistic::1.2#p1",
+          "kind": "point",
+          "label": "§1.2¶1",
+          "title": "Consequence for \"what is a room-field\"",
+          "level": 4,
+          "lines": [
+            76,
+            76
+          ],
+          "tension": false,
+          "terms": {
+            "(μ̂, κ)": 1,
+            "summary statistic": 1,
+            "ν_n": 1,
+            "higher-order functional": 1
+          }
+        },
+        {
+          "eid": "probabilistic::1.3",
+          "kind": "heading",
+          "label": "§1.3",
+          "title": "The field-edge as a divergence between measures",
+          "level": 3,
+          "lines": [
+            87,
+            87
+          ],
+          "tension": false,
+          "terms": {
+            "d_mu = ‖μ̂_a − μ̂_b‖": 1,
+            "d_warmth = ŵ·(μ̂_a − μ̂_b)": 1,
+            "d_log_kappa = log(κ_a/κ_b)": 1,
+            "real = d_mu > 2·max(se)": 1,
+            "‖â − b̂‖": 1,
+            "d=7": 1,
+            "a_d = i_{d/2}/i_{d/2−1}": 1,
+            "is the code's": 1,
+            "(d/2)log(2π)": 1,
+            "½(kl(a‖b)+kl(b‖a))": 1,
+            "symmetric divergence": 1,
+            "edge": 1,
+            "d_mu = √(2(1−μ_aᵀμ_b))": 1,
+            "d_log_kappa": 1,
+            "kl_sym": 1
+          }
+        },
+        {
+          "eid": "probabilistic::1.3#p1",
+          "kind": "point",
+          "label": "§1.3¶1",
+          "title": "`warmth` and `κ` are orthogonal by construction",
+          "level": 4,
+          "lines": [
+            113,
+            113
+          ],
+          "tension": false,
+          "terms": {
+            "warmth": 2,
+            "and are orthogonal by construction": 1,
+            "(direction, magnitude)": 1,
+            "(d_mu/d_warmth, d_log_kappa)": 1
+          }
+        },
+        {
+          "eid": "probabilistic::1.3#p2",
+          "kind": "point",
+          "label": "§1.3¶2",
+          "title": "The `real` gate is blind to pure concentration change",
+          "level": 4,
+          "lines": [
+            118,
+            118
+          ],
+          "tension": false,
+          "terms": {
+            "real": 1,
+            "real = d_mu > 2·max(se)": 1,
+            "d_log_kappa": 1
+          }
+        },
+        {
+          "eid": "probabilistic::1.3#p3",
+          "kind": "point",
+          "label": "§1.3¶3",
+          "title": "Recommendation (derivable, 3 lines)",
+          "level": 4,
+          "lines": [
+            126,
+            126
+          ],
+          "tension": false,
+          "terms": {
+            "kl_sym": 2,
+            "edge": 1,
+            "{d_mu, d_warmth, d_log_kappa, kl_sym, real}": 1,
+            "real": 1,
+            "d_mu": 1
+          }
+        },
+        {
+          "eid": "probabilistic::2",
+          "kind": "heading",
+          "label": "§2",
+          "title": "Estimator theory — why the static ratio is a window artifact",
+          "level": 2,
+          "lines": [
+            132,
+            132
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "probabilistic::2.1",
+          "kind": "heading",
+          "label": "§2.1",
+          "title": "The two quantities under the one symbol \"ratio\"",
+          "level": 3,
+          "lines": [
+            134,
+            134
+          ],
+          "tension": false,
+          "terms": {
+            "spread / drift": 1,
+            "ratio": 1,
+            "ratio of two night-scale averages": 1
+          }
+        },
+        {
+          "eid": "probabilistic::2.2",
+          "kind": "heading",
+          "label": "§2.2",
+          "title": "The artifact: ratio-of-means vs mean-of-ratios",
+          "level": 3,
+          "lines": [
+            159,
+            159
+          ],
+          "tension": false,
+          "terms": {
+            "clear-side in every phase": 1,
+            "bimodal": 1,
+            "ρ = o/d": 1,
+            "anti-correlated across phases": 1,
+            "e[o/d] ≥ e[o]/e[d]": 1,
+            "variance of the drift spike": 1,
+            "drift": 1,
+            "spread": 1,
+            "persistent": 1,
+            "spread/drift": 1
+          }
+        },
+        {
+          "eid": "probabilistic::2.3",
+          "kind": "heading",
+          "label": "§2.3",
+          "title": "The correct likelihood / marginalization",
+          "level": 3,
+          "lines": [
+            185,
+            185
+          ],
+          "tension": false,
+          "terms": {
+            "o_r": 2,
+            "b(t)": 1,
+            "field_eff_after": 1,
+            "e_r[o_r] = 0": 1,
+            "fixed idiosyncratic offset": 1,
+            "ε_r(t)": 1,
+            "ratio of conditional (phase-indexed) functionals": 1,
+            "order of marginalization": 1,
+            "point process": 1,
+            "ρ(φ)": 1
+          }
+        },
+        {
+          "eid": "probabilistic::2.3#p1",
+          "kind": "point",
+          "label": "§2.3¶1",
+          "title": "The continuity ladder is protecting the artifact",
+          "level": 4,
+          "lines": [
+            221,
+            221
+          ],
+          "tension": false,
+          "terms": {
+            "conditional": 1,
+            "ρ(t)|stable": 1,
+            "ρ(t)|transition": 1
+          }
+        },
+        {
+          "eid": "probabilistic::3",
+          "kind": "heading",
+          "label": "§3",
+          "title": "Hypothesis structure — reader-delta as conditional measure drift",
+          "level": 2,
+          "lines": [
+            231,
+            231
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "probabilistic::3.1",
+          "kind": "heading",
+          "label": "§3.1",
+          "title": "The object: conditional measure and its drift",
+          "level": 3,
+          "lines": [
+            233,
+            233
+          ],
+          "tension": false,
+          "terms": {
+            "conditional measure": 1,
+            "dμ_t(·|r) = μ_{t+δt}(·|r) − μ_t(·|r)": 1,
+            "reader-delta is its drift": 1,
+            "δb(t)": 1,
+            "room term": 1,
+            "o_r": 1,
+            "reader term": 1
+          }
+        },
+        {
+          "eid": "probabilistic::3.1#p1",
+          "kind": "point",
+          "label": "§3.1¶1",
+          "title": "noise",
+          "level": 4,
+          "lines": [
+            246,
+            246
+          ],
+          "tension": false,
+          "terms": {
+            "noise": 1,
+            "o_r": 1
+          }
+        },
+        {
+          "eid": "probabilistic::3.2",
+          "kind": "heading",
+          "label": "§3.2",
+          "title": "The right null and test statistics — one formalism",
+          "level": 3,
+          "lines": [
+            252,
+            252
+          ],
+          "tension": false,
+          "terms": {
+            "μ_t(·|r)": 1,
+            "changepoint localization": 1,
+            "d_r(t)": 1,
+            "∝ ‖δb‖": 1,
+            "o_r": 1,
+            "invariance": 1,
+            "e[cos] = 0": 1,
+            "independence": 1,
+            "ρ ⊥ x_n | r": 1,
+            "not four inventions": 1,
+            "ρ_r(t)": 1
+          }
+        },
+        {
+          "eid": "probabilistic::3.3",
+          "kind": "heading",
+          "label": "§3.3",
+          "title": "Where the current statistics deviate from the formalism (three seams)",
+          "level": 3,
+          "lines": [
+            279,
+            279
+          ],
+          "tension": true,
+          "terms": {}
+        },
+        {
+          "eid": "probabilistic::3.3#p1",
+          "kind": "point",
+          "label": "§3.3¶1",
+          "title": "Norm mismatch inside ρ",
+          "level": 4,
+          "lines": [
+            281,
+            281
+          ],
+          "tension": false,
+          "terms": {
+            "o_r": 1,
+            "d_r": 1,
+            "dial-rms": 1,
+            "euclidean 7-norm": 1,
+            "ρ = σ_between/δ_drift": 1,
+            "dimensional artifact": 1
+          }
+        },
+        {
+          "eid": "probabilistic::3.3#p2",
+          "kind": "point",
+          "label": "§3.3¶2",
+          "title": "P is near-saturated under a common-shift null (the live risk)",
+          "level": 4,
+          "lines": [
+            287,
+            287
+          ],
+          "tension": true,
+          "terms": {
+            "m_r → m_r + δb": 1,
+            "o_r = m_r − b̄": 1,
+            "p_trans = cos(o_pre, o_post)": 1,
+            "unchanged by construction": 1,
+            "never fire": 1
+          }
+        },
+        {
+          "eid": "probabilistic::3.3#p3",
+          "kind": "point",
+          "label": "§3.3¶3",
+          "title": "S is a collider",
+          "level": 4,
+          "lines": [
+            298,
+            298
+          ],
+          "tension": false,
+          "terms": {
+            "o_r": 1,
+            "b̄(t)": 1,
+            "x_n": 1,
+            "selection": 1
+          }
+        },
+        {
+          "eid": "probabilistic::4",
+          "kind": "heading",
+          "label": "§4",
+          "title": "What the code should look like",
+          "level": 2,
+          "lines": [
+            309,
+            309
+          ],
+          "tension": false,
+          "terms": {
+            "o_r": 1,
+            "p_trans ≈ 1": 1
+          }
+        },
+        {
+          "eid": "probabilistic::5",
+          "kind": "heading",
+          "label": "§5",
+          "title": "Dissent — and the one mathematical risk",
+          "level": 2,
+          "lines": [
+            356,
+            356
+          ],
+          "tension": true,
+          "terms": {
+            "discussion-leader-round1": 1
+          }
+        },
+        {
+          "eid": "probabilistic::5#p1",
+          "kind": "point",
+          "label": "§5¶1",
+          "title": "Dissent 1 — the continuity ladder is a tautology gate, not a correctness gate",
+          "level": 3,
+          "lines": [
+            362,
+            362
+          ],
+          "tension": true,
+          "terms": {
+            "w=full-night": 1,
+            "ρ|stable": 1,
+            "ρ|transition": 1,
+            "per-phase": 1
+          }
+        },
+        {
+          "eid": "probabilistic::5#p2",
+          "kind": "point",
+          "label": "§5¶2",
+          "title": "Dissent 2 — the premise \"band\" (0.3/0.6) is dimensional, not physical",
+          "level": 3,
+          "lines": [
+            368,
+            368
+          ],
+          "tension": true,
+          "terms": {
+            "σ_between/δ_drift": 1
+          }
+        },
+        {
+          "eid": "probabilistic::5#p3",
+          "kind": "point",
+          "label": "§5¶3",
+          "title": "Dissent 3 — the field-edge is two separate scalars wearing one name",
+          "level": 3,
+          "lines": [
+            375,
+            375
+          ],
+          "tension": true,
+          "terms": {
+            "d_mu": 1,
+            "d_log_kappa": 1,
+            "real": 1,
+            "kl_sym": 1
+          }
+        },
+        {
+          "eid": "probabilistic::5#p4",
+          "kind": "point",
+          "label": "§5¶4",
+          "title": "The one mathematical risk that could sink the thesis",
+          "level": 3,
+          "lines": [
+            381,
+            381
+          ],
+          "tension": true,
+          "terms": {
+            "rigid common shift": 1
+          }
+        },
+        {
+          "eid": "probabilistic::6",
+          "kind": "heading",
+          "label": "§6",
+          "title": "Formula → file index",
+          "level": 2,
+          "lines": [
+            399,
+            399
+          ],
+          "tension": false,
+          "terms": {
+            "kl_sym": 1
+          }
+        }
+      ],
+      "top_terms": {
+        "o_r": 8,
+        "kl_sym": 5,
+        "d_log_kappa": 3,
+        "real": 3,
+        "(μ̂, κ)": 2,
+        "ν_n": 2,
+        "vmf_fit": 2,
+        "real = d_mu > 2·max(se)": 2,
+        "edge": 2,
+        "warmth": 2,
+        "d_mu": 2,
+        "elephant/": 1,
+        "scripts/": 1,
+        "probability measure": 1,
+        "divergence between those measures": 1,
+        "μ(reading | reader, phase)": 1,
+        "logged_readings": 1,
+        "diag(g_r)": 1,
+        "list of z-vectors": 1,
+        "empirical measure": 1,
+        "a₇(κ) = ρ": 1,
+        "a₇(κ) = i_{7/2}(κ)/i_{5/2}(κ)": 1,
+        "ρ = ‖r̄‖": 1,
+        "summary statistic": 1,
+        "higher-order functional": 1,
+        "d_mu = ‖μ̂_a − μ̂_b‖": 1,
+        "d_warmth = ŵ·(μ̂_a − μ̂_b)": 1,
+        "d_log_kappa = log(κ_a/κ_b)": 1,
+        "‖â − b̂‖": 1,
+        "d=7": 1,
+        "a_d = i_{d/2}/i_{d/2−1}": 1,
+        "is the code's": 1,
+        "(d/2)log(2π)": 1,
+        "½(kl(a‖b)+kl(b‖a))": 1,
+        "symmetric divergence": 1,
+        "d_mu = √(2(1−μ_aᵀμ_b))": 1,
+        "and are orthogonal by construction": 1,
+        "(direction, magnitude)": 1,
+        "(d_mu/d_warmth, d_log_kappa)": 1,
+        "{d_mu, d_warmth, d_log_kappa, kl_sym, real}": 1
+      },
+      "file_refs": {
+        "vmf.py": 5,
+        "e2_instrument.py": 3,
+        "premise_measurement.py": 1,
+        "the-importance-of-moments.md": 1,
+        "field.py": 1,
+        "e5_identity_propagation.py": 1,
+        "premise_band_movers.py": 1,
+        "PREMISE-BAND-MOVERS-RUN-2026-08-21.md": 1,
+        "E2E3-premise-band-movers-design-2026-08-21.md": 1
+      },
+      "stats": [
+        {
+          "value": "0.5599",
+          "context": "`μ(reading | reader, phase)`, and its in-band verdict (0.5599/0.6088/0.6139) is a",
+          "where": "§0",
+          "eid": "probabilistic::0"
+        },
+        {
+          "value": "0.6088",
+          "context": "`μ(reading | reader, phase)`, and its in-band verdict (0.5599/0.6088/0.6139) is a",
+          "where": "§0",
+          "eid": "probabilistic::0"
+        },
+        {
+          "value": "0.6139",
+          "context": "`μ(reading | reader, phase)`, and its in-band verdict (0.5599/0.6088/0.6139) is a",
+          "where": "§0",
+          "eid": "probabilistic::0"
+        },
+        {
+          "value": "0.15",
+          "context": "Let the denominator be **bimodal**: noise floor `δ₀ ≈ 0.15–0.3` (stable strata) vs",
+          "where": "§2.2",
+          "eid": "probabilistic::2.2"
+        },
+        {
+          "value": "0.46",
+          "context": "constant `≈ 0.46–0.56` (the honesty guard's own observation, design §0). Then:",
+          "where": "§2.2",
+          "eid": "probabilistic::2.2"
+        },
+        {
+          "value": "0.56",
+          "context": "constant `≈ 0.46–0.56` (the honesty guard's own observation, design §0). Then:",
+          "where": "§2.2",
+          "eid": "probabilistic::2.2"
+        },
+        {
+          "value": "0.75",
+          "context": "full-night/strata-split `drift` takes the *step* `δ₁ ≈ 0.75` and **dilutes it by",
+          "where": "§2.2",
+          "eid": "probabilistic::2.2"
+        },
+        {
+          "value": "0.748",
+          "context": "the filed `drift ≈ 0.748`. The numerator `spread` is dominated by **persistent**",
+          "where": "§2.2",
+          "eid": "probabilistic::2.2"
+        },
+        {
+          "value": "0.994",
+          "context": "between-reader offsets (P_trans ≈ 0.994: they survive the step), so it is *phase-",
+          "where": "§2.2",
+          "eid": "probabilistic::2.2"
+        },
+        {
+          "value": "0.15",
+          "context": "- `ε_R(t)`: within-reader, within-window noise (the `0.15–0.3` floor).",
+          "where": "§2.3",
+          "eid": "probabilistic::2.3"
+        },
+        {
+          "value": "0.91",
+          "context": "σ_between² ∝ Var_R(o_R)          (spread — the persistent, reader-attributable variance; ICC 0.91, P 0.994)",
+          "where": "§2.3",
+          "eid": "probabilistic::2.3"
+        },
+        {
+          "value": "0.994",
+          "context": "σ_between² ∝ Var_R(o_R)          (spread — the persistent, reader-attributable variance; ICC 0.91, P 0.994)",
+          "where": "§2.3",
+          "eid": "probabilistic::2.3"
+        },
+        {
+          "value": "0.10",
+          "context": "night` to reproduce the filed ratio within ±0.10 — and it does (0.5737/0.6491/0.5409/",
+          "where": "§2.3¶1",
+          "eid": "probabilistic::2.3#p1"
+        },
+        {
+          "value": "0.5737",
+          "context": "night` to reproduce the filed ratio within ±0.10 — and it does (0.5737/0.6491/0.5409/",
+          "where": "§2.3¶1",
+          "eid": "probabilistic::2.3#p1"
+        },
+        {
+          "value": "0.6491",
+          "context": "night` to reproduce the filed ratio within ±0.10 — and it does (0.5737/0.6491/0.5409/",
+          "where": "§2.3¶1",
+          "eid": "probabilistic::2.3#p1"
+        },
+        {
+          "value": "0.5409",
+          "context": "night` to reproduce the filed ratio within ±0.10 — and it does (0.5737/0.6491/0.5409/",
+          "where": "§2.3¶1",
+          "eid": "probabilistic::2.3#p1"
+        },
+        {
+          "value": "0.4845",
+          "context": "0.4845 vs 0.6139/0.6088/0.5599/0.4898, all `ok: true`). That is a *tautology gate*: it",
+          "where": "§2.3¶1",
+          "eid": "probabilistic::2.3#p1"
+        },
+        {
+          "value": "0.6139",
+          "context": "0.4845 vs 0.6139/0.6088/0.5599/0.4898, all `ok: true`). That is a *tautology gate*: it",
+          "where": "§2.3¶1",
+          "eid": "probabilistic::2.3#p1"
+        },
+        {
+          "value": "0.6088",
+          "context": "0.4845 vs 0.6139/0.6088/0.5599/0.4898, all `ok: true`). That is a *tautology gate*: it",
+          "where": "§2.3¶1",
+          "eid": "probabilistic::2.3#p1"
+        },
+        {
+          "value": "0.5599",
+          "context": "0.4845 vs 0.6139/0.6088/0.5599/0.4898, all `ok: true`). That is a *tautology gate*: it",
+          "where": "§2.3¶1",
+          "eid": "probabilistic::2.3#p1"
+        },
+        {
+          "value": "0.4898",
+          "context": "0.4845 vs 0.6139/0.6088/0.5599/0.4898, all `ok: true`). That is a *tautology gate*: it",
+          "where": "§2.3¶1",
+          "eid": "probabilistic::2.3#p1"
+        },
+        {
+          "value": "0.9940",
+          "context": "is `≈ 1` *automatically* — observed 0.9940 vs a threshold of 0.497. The registered",
+          "where": "§3.3¶2",
+          "eid": "probabilistic::3.3#p2"
+        },
+        {
+          "value": "1.41",
+          "context": "(1.41 / 1.24, both waves) is the expected signature of **selection**, not of collapse.",
+          "where": "§3.3¶3",
+          "eid": "probabilistic::3.3#p3"
+        },
+        {
+          "value": "1.24",
+          "context": "(1.41 / 1.24, both waves) is the expected signature of **selection**, not of collapse.",
+          "where": "§3.3¶3",
+          "eid": "probabilistic::3.3#p3"
+        },
+        {
+          "value": "0.119",
+          "context": "(wave-2, [0.119, 1.473]) is the same knife-edge the slope run's tripwire caught —",
+          "where": "§3.3¶3",
+          "eid": "probabilistic::3.3#p3"
+        },
+        {
+          "value": "1.473",
+          "context": "(wave-2, [0.119, 1.473]) is the same knife-edge the slope run's tripwire caught —",
+          "where": "§3.3¶3",
+          "eid": "probabilistic::3.3#p3"
+        },
+        {
+          "value": "0.9940",
+          "context": "0.9940` with `P_rest = 0.9935`, against a kill threshold of `0.5×P_rest = 0.497`. A",
+          "where": "§5¶4",
+          "eid": "probabilistic::5#p4"
+        },
+        {
+          "value": "0.9935",
+          "context": "0.9940` with `P_rest = 0.9935`, against a kill threshold of `0.5×P_rest = 0.497`. A",
+          "where": "§5¶4",
+          "eid": "probabilistic::5#p4"
+        },
+        {
+          "value": "0.497",
+          "context": "0.9940` with `P_rest = 0.9935`, against a kill threshold of `0.5×P_rest = 0.497`. A",
+          "where": "§5¶4",
+          "eid": "probabilistic::5#p4"
+        },
+        {
+          "value": "0.994",
+          "context": "cosine of 0.994 over 7-dim vectors on 7–10 readers means the offsets are essentially",
+          "where": "§5¶4",
+          "eid": "probabilistic::5#p4"
+        }
+      ]
+    },
+    {
+      "name": "math-foundation-wesley-localgpu-2026-08-21.md",
+      "slug": "wesley",
+      "title": "Wesley's Position — Local GPU (granite3.1-dense:2b, RTX 4050)",
+      "role": "Wesley (local GPU ensign)",
+      "role_note": "granite3.1-dense:2b position, advised by Lucineer",
+      "date": "2026-08-21",
+      "sha256": "a1991e2b5ce42b4d05ec6780bc95150cdbb31f3715d34b50edd15ade65dd2b32",
+      "provenance": {
+        "name": "math-foundation-wesley-localgpu-2026-08-21.md",
+        "source_path": "/home/eileen/.openclaw/workspace/memory/math-foundation-wesley-localgpu-2026-08-21.md",
+        "sha256": "a1991e2b5ce42b4d05ec6780bc95150cdbb31f3715d34b50edd15ade65dd2b32",
+        "source_mtime": "2026-08-21T18:46:44+00:00",
+        "snapshot_action": "kept"
+      },
+      "entries": [
+        {
+          "eid": "wesley::1",
+          "kind": "heading",
+          "label": "",
+          "title": "Wesley's Position — Local GPU (granite3.1-dense:2b, RTX 4050)",
+          "level": 1,
+          "lines": [
+            1,
+            1
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "wesley::1#p1",
+          "kind": "point",
+          "label": "",
+          "title": "The question put to him",
+          "level": 2,
+          "lines": [
+            5,
+            5
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "wesley::1#p2",
+          "kind": "point",
+          "label": "",
+          "title": "His answer (verbatim, abridged)",
+          "level": 2,
+          "lines": [
+            8,
+            8
+          ],
+          "tension": false,
+          "terms": {}
+        },
+        {
+          "eid": "wesley::1#p3",
+          "kind": "point",
+          "label": "",
+          "title": "Advisor's reading (Lucineer)",
+          "level": 2,
+          "lines": [
+            14,
+            14
+          ],
+          "tension": false,
+          "terms": {}
+        }
+      ],
+      "top_terms": {},
+      "file_refs": {},
+      "stats": []
+    }
+  ],
+  "shared_terms": {
+    "edge": {
+      "creative": 1,
+      "zeroclaw": 1,
+      "probabilistic": 2
+    },
+    "o_r": {
+      "zeroclaw": 1,
+      "probabilistic": 8
+    },
+    "kl_sym": {
+      "zeroclaw": 3,
+      "probabilistic": 5
+    },
+    "real": {
+      "zeroclaw": 4,
+      "probabilistic": 3
+    },
+    "warmth": {
+      "creative": 2,
+      "probabilistic": 2
+    },
+    "d_mu": {
+      "creative": 1,
+      "probabilistic": 2
+    },
+    "entry_ok": {
+      "algebraic": 1,
+      "zeroclaw": 2
+    },
+    "selection": {
+      "zeroclaw": 1,
+      "probabilistic": 1
+    },
+    "warmth_vmf": {
+      "leader": 1,
+      "zeroclaw": 1
+    },
+    "{d_mu, d_warmth, d_log_kappa, kl_sym, real}": {
+      "zeroclaw": 1,
+      "probabilistic": 1
+    }
+  },
+  "term_displays": {
+    "warmth_vmf": {
+      "leader": "warmth_vmf",
+      "zeroclaw": "warmth_vmf"
+    },
+    "entry_ok": {
+      "algebraic": "entry_ok",
+      "zeroclaw": "entry_ok"
+    },
+    "warmth": {
+      "creative": "warmth",
+      "probabilistic": "warmth"
+    },
+    "d_mu": {
+      "creative": "d_mu",
+      "probabilistic": "d_mu"
+    },
+    "edge": {
+      "creative": "edge",
+      "zeroclaw": "edge",
+      "probabilistic": "edge"
+    },
+    "kl_sym": {
+      "zeroclaw": "kl_sym",
+      "probabilistic": "kl_sym"
+    },
+    "real": {
+      "zeroclaw": "real",
+      "probabilistic": "real"
+    },
+    "selection": {
+      "zeroclaw": "selection",
+      "probabilistic": "selection"
+    },
+    "o_r": {
+      "zeroclaw": "o_R",
+      "probabilistic": "o_R"
+    },
+    "{d_mu, d_warmth, d_log_kappa, kl_sym, real}": {
+      "zeroclaw": "{d_mu, d_warmth, d_log_kappa, kl_sym, real}",
+      "probabilistic": "{d_mu, d_warmth, d_log_kappa, kl_sym, real}"
+    }
+  },
+  "shared_topics": {
+    "field": {
+      "leader": 33,
+      "algebraic": 14,
+      "creative": 10,
+      "zeroclaw": 24,
+      "probabilistic": 13,
+      "wesley": 1
+    },
+    "vmf": {
+      "leader": 14,
+      "algebraic": 19,
+      "creative": 3,
+      "zeroclaw": 11,
+      "probabilistic": 27,
+      "wesley": 1
+    },
+    "room": {
+      "leader": 8,
+      "algebraic": 11,
+      "creative": 9,
+      "zeroclaw": 11,
+      "probabilistic": 19,
+      "wesley": 5
+    },
+    "warmth": {
+      "leader": 2,
+      "algebraic": 11,
+      "creative": 5,
+      "zeroclaw": 15,
+      "probabilistic": 9,
+      "wesley": 1
+    },
+    "warm": {
+      "leader": 1,
+      "algebraic": 5,
+      "creative": 1,
+      "zeroclaw": 13,
+      "probabilistic": 7,
+      "wesley": 1
+    },
+    "reader": {
+      "leader": 10,
+      "algebraic": 22,
+      "creative": 2,
+      "zeroclaw": 22,
+      "probabilistic": 20
+    },
+    "edge": {
+      "leader": 3,
+      "algebraic": 24,
+      "creative": 9,
+      "zeroclaw": 14,
+      "probabilistic": 15
+    },
+    "ledger": {
+      "leader": 3,
+      "algebraic": 22,
+      "creative": 4,
+      "zeroclaw": 15,
+      "probabilistic": 3
+    },
+    "drift": {
+      "leader": 6,
+      "algebraic": 14,
+      "creative": 1,
+      "zeroclaw": 5,
+      "probabilistic": 19
+    },
+    "premise": {
+      "leader": 10,
+      "algebraic": 4,
+      "creative": 8,
+      "zeroclaw": 7,
+      "probabilistic": 13
+    },
+    "foundation": {
+      "leader": 6,
+      "algebraic": 1,
+      "creative": 1,
+      "zeroclaw": 25,
+      "probabilistic": 5
+    },
+    "band": {
+      "leader": 3,
+      "algebraic": 5,
+      "creative": 2,
+      "zeroclaw": 12,
+      "probabilistic": 14
+    },
+    "structure": {
+      "leader": 8,
+      "algebraic": 13,
+      "creative": 1,
+      "zeroclaw": 8,
+      "probabilistic": 3
+    },
+    "registered": {
+      "leader": 2,
+      "algebraic": 3,
+      "zeroclaw": 17,
+      "probabilistic": 8,
+      "wesley": 1
+    },
+    "mean": {
+      "leader": 3,
+      "algebraic": 1,
+      "creative": 1,
+      "zeroclaw": 4,
+      "probabilistic": 21
+    },
+    "measure": {
+      "algebraic": 2,
+      "creative": 4,
+      "zeroclaw": 3,
+      "probabilistic": 20,
+      "wesley": 1
+    },
+    "object": {
+      "algebraic": 4,
+      "creative": 1,
+      "zeroclaw": 15,
+      "probabilistic": 9,
+      "wesley": 1
+    },
+    "real": {
+      "leader": 1,
+      "algebraic": 2,
+      "creative": 1,
+      "zeroclaw": 10,
+      "probabilistic": 13
+    }
+  },
+  "code_refs": {
+    "E2E3-premise-band-movers-design-2026-08-21.md": {
+      "probabilistic": 1
+    },
+    "PREMISE-BAND-MOVERS-RUN-2026-08-21.md": {
+      "zeroclaw": 1,
+      "probabilistic": 1
+    },
+    "e2-e3-side-by-side.md": {
+      "zeroclaw": 1
+    },
+    "e2_instrument.py": {
+      "algebraic": 1,
+      "probabilistic": 3
+    },
+    "e5_identity_propagation.py": {
+      "probabilistic": 1
+    },
+    "elephant/vmf.py": {
+      "algebraic": 1
+    },
+    "field.py": {
+      "algebraic": 1,
+      "probabilistic": 1
+    },
+    "master-outline.md": {
+      "algebraic": 1,
+      "zeroclaw": 1
+    },
+    "premise_band_movers.py": {
+      "creative": 1,
+      "probabilistic": 1
+    },
+    "premise_measurement.py": {
+      "probabilistic": 1
+    },
+    "scripts/e2_field.py": {
+      "algebraic": 1
+    },
+    "scripts/e2_instrument.py": {
+      "algebraic": 3
+    },
+    "scripts/premise_band_movers.py": {
+      "algebraic": 1
+    },
+    "sensors.py": {
+      "creative": 1
+    },
+    "the-importance-of-moments.md": {
+      "probabilistic": 1
+    },
+    "topic.md": {
+      "zeroclaw": 1
+    },
+    "vmf.py": {
+      "leader": 1,
+      "algebraic": 2,
+      "creative": 2,
+      "zeroclaw": 1,
+      "probabilistic": 5
+    }
+  },
+  "statistics_index": {
+    "0.0303": {
+      "zeroclaw": [
+        {
+          "value": "0.0303",
+          "context": "2. **E5 class-residual erratum: 0.1342 [0.0303, 0.1942], not 0.4366.** The clean",
+          "where": "§2.1¶2",
+          "eid": "zeroclaw::2.1#p2"
+        }
+      ]
+    },
+    "0.05": {
+      "leader": [
+        {
+          "value": "0.05",
+          "context": "5. **Hard-coded hysteresis seam**: The hysteresis margin (0.05) and hold count (3 windows) are hard-coded a...",
+          "where": "§2¶5",
+          "eid": "leader::2#p5"
+        }
+      ],
+      "algebraic": [
+        {
+          "value": "0.05",
+          "context": "The hysteresis margin HYST_MARGIN = 0.05 and hold count HYST_HOLD = 3",
+          "where": "§3.2",
+          "eid": "algebraic::3.2"
+        }
+      ],
+      "zeroclaw": [
+        {
+          "value": "0.05",
+          "context": "- The **derivation demand** (Problem 5: \"derive the 0.05 margin and 3-window hold",
+          "where": "§1.4",
+          "eid": "zeroclaw::1.4"
+        }
+      ]
+    },
+    "0.10": {
+      "probabilistic": [
+        {
+          "value": "0.10",
+          "context": "night` to reproduce the filed ratio within ±0.10 — and it does (0.5737/0.6491/0.5409/",
+          "where": "§2.3¶1",
+          "eid": "probabilistic::2.3#p1"
+        }
+      ]
+    },
+    "0.119": {
+      "zeroclaw": [
+        {
+          "value": "0.119",
+          "context": "- Wave-2 class-residual: slope 0.695 [0.119, 1.473] — **excludes 0** while the",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        }
+      ],
+      "probabilistic": [
+        {
+          "value": "0.119",
+          "context": "(wave-2, [0.119, 1.473]) is the same knife-edge the slope run's tripwire caught —",
+          "where": "§3.3¶3",
+          "eid": "probabilistic::3.3#p3"
+        }
+      ]
+    },
+    "0.1342": {
+      "zeroclaw": [
+        {
+          "value": "0.1342",
+          "context": "2. **E5 class-residual erratum: 0.1342 [0.0303, 0.1942], not 0.4366.** The clean",
+          "where": "§2.1¶2",
+          "eid": "zeroclaw::2.1#p2"
+        },
+        {
+          "value": "0.1342",
+          "context": "personality confound is a named structural risk, partially measured (E5: 0.1342",
+          "where": "§2.4",
+          "eid": "zeroclaw::2.4"
+        },
+        {
+          "value": "0.1342",
+          "context": "half-measured (E5 0.1342), scheduled (6.3); forces two guards — collider sensitivity",
+          "where": "Personality confound",
+          "eid": "zeroclaw::.1#p6"
+        }
+      ]
+    },
+    "0.15": {
+      "probabilistic": [
+        {
+          "value": "0.15",
+          "context": "Let the denominator be **bimodal**: noise floor `δ₀ ≈ 0.15–0.3` (stable strata) vs",
+          "where": "§2.2",
+          "eid": "probabilistic::2.2"
+        },
+        {
+          "value": "0.15",
+          "context": "- `ε_R(t)`: within-reader, within-window noise (the `0.15–0.3` floor).",
+          "where": "§2.3",
+          "eid": "probabilistic::2.3"
+        }
+      ]
+    },
+    "0.1942": {
+      "zeroclaw": [
+        {
+          "value": "0.1942",
+          "context": "2. **E5 class-residual erratum: 0.1342 [0.0303, 0.1942], not 0.4366.** The clean",
+          "where": "§2.1¶2",
+          "eid": "zeroclaw::2.1#p2"
+        }
+      ]
+    },
+    "0.25": {
+      "algebraic": [
+        {
+          "value": "0.25",
+          "context": "return x <= 0.25                                  # 0.3 - 0.05",
+          "where": "§3.2",
+          "eid": "algebraic::3.2"
+        }
+      ]
+    },
+    "0.291": {
+      "algebraic": [
+        {
+          "value": "0.291",
+          "context": "- **Null-drift control (0.291 vs primary drift 0.748):** low null-drift",
+          "where": "§5.3¶3",
+          "eid": "algebraic::5.3#p3"
+        }
+      ]
+    },
+    "0.313": {
+      "zeroclaw": [
+        {
+          "value": "0.313",
+          "context": "- Primary (wave-2): slope 1.41 [−0.313, +2.797] — **contains 0**, x-invariant.",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        }
+      ]
+    },
+    "0.334": {
+      "zeroclaw": [
+        {
+          "value": "0.334",
+          "context": "- Wave-1 replication: slope 1.24 [+0.334, +1.979] — **excludes 0**, but does not beat",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        }
+      ]
+    },
+    "0.35": {
+      "algebraic": [
+        {
+          "value": "0.35",
+          "context": "if cur == 0 and tgt == 1: return x >= 0.35  # 0.3 + 0.05",
+          "where": "§3.2",
+          "eid": "algebraic::3.2"
+        }
+      ]
+    },
+    "0.36": {
+      "algebraic": [
+        {
+          "value": "0.36",
+          "context": "- Content separation 0.893 vs silence 0.36: \"room-level composition",
+          "where": "§5.2¶1",
+          "eid": "algebraic::5.2#p1"
+        }
+      ]
+    },
+    "0.46": {
+      "probabilistic": [
+        {
+          "value": "0.46",
+          "context": "constant `≈ 0.46–0.56` (the honesty guard's own observation, design §0). Then:",
+          "where": "§2.2",
+          "eid": "probabilistic::2.2"
+        }
+      ]
+    },
+    "0.4845": {
+      "probabilistic": [
+        {
+          "value": "0.4845",
+          "context": "0.4845 vs 0.6139/0.6088/0.5599/0.4898, all `ok: true`). That is a *tautology gate*: it",
+          "where": "§2.3¶1",
+          "eid": "probabilistic::2.3#p1"
+        }
+      ]
+    },
+    "0.4898": {
+      "probabilistic": [
+        {
+          "value": "0.4898",
+          "context": "0.4845 vs 0.6139/0.6088/0.5599/0.4898, all `ok: true`). That is a *tautology gate*: it",
+          "where": "§2.3¶1",
+          "eid": "probabilistic::2.3#p1"
+        }
+      ]
+    },
+    "0.497": {
+      "probabilistic": [
+        {
+          "value": "0.497",
+          "context": "0.9940` with `P_rest = 0.9935`, against a kill threshold of `0.5×P_rest = 0.497`. A",
+          "where": "§5¶4",
+          "eid": "probabilistic::5#p4"
+        }
+      ]
+    },
+    "0.521": {
+      "zeroclaw": [
+        {
+          "value": "0.521",
+          "context": "the roster competitor (perm p = 0.521) ⇒ INDETERMINATE leg, not falsification.",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        }
+      ]
+    },
+    "0.5409": {
+      "probabilistic": [
+        {
+          "value": "0.5409",
+          "context": "night` to reproduce the filed ratio within ±0.10 — and it does (0.5737/0.6491/0.5409/",
+          "where": "§2.3¶1",
+          "eid": "probabilistic::2.3#p1"
+        }
+      ]
+    },
+    "0.55": {
+      "algebraic": [
+        {
+          "value": "0.55",
+          "context": "if cur == 2 and tgt == 1: return x <= 0.55       # 0.6 - 0.05",
+          "where": "§3.2",
+          "eid": "algebraic::3.2"
+        }
+      ]
+    },
+    "0.5599": {
+      "probabilistic": [
+        {
+          "value": "0.5599",
+          "context": "`μ(reading | reader, phase)`, and its in-band verdict (0.5599/0.6088/0.6139) is a",
+          "where": "§0",
+          "eid": "probabilistic::0"
+        },
+        {
+          "value": "0.5599",
+          "context": "0.4845 vs 0.6139/0.6088/0.5599/0.4898, all `ok: true`). That is a *tautology gate*: it",
+          "where": "§2.3¶1",
+          "eid": "probabilistic::2.3#p1"
+        }
+      ]
+    },
+    "0.56": {
+      "probabilistic": [
+        {
+          "value": "0.56",
+          "context": "constant `≈ 0.46–0.56` (the honesty guard's own observation, design §0). Then:",
+          "where": "§2.2",
+          "eid": "probabilistic::2.2"
+        }
+      ]
+    },
+    "0.5737": {
+      "probabilistic": [
+        {
+          "value": "0.5737",
+          "context": "night` to reproduce the filed ratio within ±0.10 — and it does (0.5737/0.6491/0.5409/",
+          "where": "§2.3¶1",
+          "eid": "probabilistic::2.3#p1"
+        }
+      ]
+    },
+    "0.6088": {
+      "probabilistic": [
+        {
+          "value": "0.6088",
+          "context": "`μ(reading | reader, phase)`, and its in-band verdict (0.5599/0.6088/0.6139) is a",
+          "where": "§0",
+          "eid": "probabilistic::0"
+        },
+        {
+          "value": "0.6088",
+          "context": "0.4845 vs 0.6139/0.6088/0.5599/0.4898, all `ok: true`). That is a *tautology gate*: it",
+          "where": "§2.3¶1",
+          "eid": "probabilistic::2.3#p1"
+        }
+      ]
+    },
+    "0.6139": {
+      "probabilistic": [
+        {
+          "value": "0.6139",
+          "context": "`μ(reading | reader, phase)`, and its in-band verdict (0.5599/0.6088/0.6139) is a",
+          "where": "§0",
+          "eid": "probabilistic::0"
+        },
+        {
+          "value": "0.6139",
+          "context": "0.4845 vs 0.6139/0.6088/0.5599/0.4898, all `ok: true`). That is a *tautology gate*: it",
+          "where": "§2.3¶1",
+          "eid": "probabilistic::2.3#p1"
+        }
+      ]
+    },
+    "0.6491": {
+      "probabilistic": [
+        {
+          "value": "0.6491",
+          "context": "night` to reproduce the filed ratio within ±0.10 — and it does (0.5737/0.6491/0.5409/",
+          "where": "§2.3¶1",
+          "eid": "probabilistic::2.3#p1"
+        }
+      ]
+    },
+    "0.65": {
+      "algebraic": [
+        {
+          "value": "0.65",
+          "context": "return x >= 0.65                              # 0.6 + 0.05",
+          "where": "§3.2",
+          "eid": "algebraic::3.2"
+        }
+      ]
+    },
+    "0.667": {
+      "algebraic": [
+        {
+          "value": "0.667",
+          "context": "per-reader baselines have ICC = 0.7714 [0.667, 0.810]. This is an invariant",
+          "where": "§2.3",
+          "eid": "algebraic::2.3"
+        },
+        {
+          "value": "0.667",
+          "context": "- ICC 0.7714 [0.667, 0.810]: \"per-reader baselines are real.\"",
+          "where": "§5.2¶1",
+          "eid": "algebraic::5.2#p1"
+        }
+      ]
+    },
+    "0.695": {
+      "zeroclaw": [
+        {
+          "value": "0.695",
+          "context": "- Wave-2 class-residual: slope 0.695 [0.119, 1.473] — **excludes 0** while the",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        },
+        {
+          "value": "0.695",
+          "context": "**Object:** the positive S slopes (1.41 / 1.24, class-residual 0.695 excluding 0) are",
+          "where": "§4.2¶1",
+          "eid": "zeroclaw::4.2#p1"
+        }
+      ]
+    },
+    "0.748": {
+      "algebraic": [
+        {
+          "value": "0.748",
+          "context": "- **Null-drift control (0.291 vs primary drift 0.748):** low null-drift",
+          "where": "§5.3¶3",
+          "eid": "algebraic::5.3#p3"
+        }
+      ],
+      "probabilistic": [
+        {
+          "value": "0.748",
+          "context": "the filed `drift ≈ 0.748`. The numerator `spread` is dominated by **persistent**",
+          "where": "§2.2",
+          "eid": "probabilistic::2.2"
+        }
+      ]
+    },
+    "0.75": {
+      "probabilistic": [
+        {
+          "value": "0.75",
+          "context": "full-night/strata-split `drift` takes the *step* `δ₁ ≈ 0.75` and **dilutes it by",
+          "where": "§2.2",
+          "eid": "probabilistic::2.2"
+        }
+      ]
+    },
+    "0.7714": {
+      "algebraic": [
+        {
+          "value": "0.7714",
+          "context": "per-reader baselines have ICC = 0.7714 [0.667, 0.810]. This is an invariant",
+          "where": "§2.3",
+          "eid": "algebraic::2.3"
+        },
+        {
+          "value": "0.7714",
+          "context": "- ICC 0.7714 [0.667, 0.810]: \"per-reader baselines are real.\"",
+          "where": "§5.2¶1",
+          "eid": "algebraic::5.2#p1"
+        }
+      ],
+      "zeroclaw": [
+        {
+          "value": "0.7714",
+          "context": "- **The ICC 0.7714: no — annotated, not killed.** The confound's sharpest target is",
+          "where": "§2.3¶3",
+          "eid": "zeroclaw::2.3#p3"
+        }
+      ]
+    },
+    "0.784": {
+      "zeroclaw": [
+        {
+          "value": "0.784",
+          "context": "instrument. The one transfer instrument that exists (Ch 8, ρ = +0.784,",
+          "where": "§1.2¶2",
+          "eid": "zeroclaw::1.2#p2"
+        }
+      ]
+    },
+    "0.810": {
+      "algebraic": [
+        {
+          "value": "0.810",
+          "context": "per-reader baselines have ICC = 0.7714 [0.667, 0.810]. This is an invariant",
+          "where": "§2.3",
+          "eid": "algebraic::2.3"
+        },
+        {
+          "value": "0.810",
+          "context": "- ICC 0.7714 [0.667, 0.810]: \"per-reader baselines are real.\"",
+          "where": "§5.2¶1",
+          "eid": "algebraic::5.2#p1"
+        }
+      ]
+    },
+    "0.893": {
+      "algebraic": [
+        {
+          "value": "0.893",
+          "context": "- Content separation 0.893 vs silence 0.36: \"room-level composition",
+          "where": "§5.2¶1",
+          "eid": "algebraic::5.2#p1"
+        }
+      ]
+    },
+    "0.91": {
+      "probabilistic": [
+        {
+          "value": "0.91",
+          "context": "σ_between² ∝ Var_R(o_R)          (spread — the persistent, reader-attributable variance; ICC 0.91, P 0.994)",
+          "where": "§2.3",
+          "eid": "probabilistic::2.3"
+        }
+      ]
+    },
+    "0.9935": {
+      "probabilistic": [
+        {
+          "value": "0.9935",
+          "context": "0.9940` with `P_rest = 0.9935`, against a kill threshold of `0.5×P_rest = 0.497`. A",
+          "where": "§5¶4",
+          "eid": "probabilistic::5#p4"
+        }
+      ]
+    },
+    "0.994": {
+      "zeroclaw": [
+        {
+          "value": "0.994",
+          "context": "near-tautological (0.994 under a rigid common shift) into a falsifiable test. I adopt",
+          "where": "§4.3¶5",
+          "eid": "zeroclaw::4.3#p5"
+        }
+      ],
+      "probabilistic": [
+        {
+          "value": "0.994",
+          "context": "between-reader offsets (P_trans ≈ 0.994: they survive the step), so it is *phase-",
+          "where": "§2.2",
+          "eid": "probabilistic::2.2"
+        },
+        {
+          "value": "0.994",
+          "context": "σ_between² ∝ Var_R(o_R)          (spread — the persistent, reader-attributable variance; ICC 0.91, P 0.994)",
+          "where": "§2.3",
+          "eid": "probabilistic::2.3"
+        },
+        {
+          "value": "0.994",
+          "context": "cosine of 0.994 over 7-dim vectors on 7–10 readers means the offsets are essentially",
+          "where": "§5¶4",
+          "eid": "probabilistic::5#p4"
+        }
+      ]
+    },
+    "0.9940": {
+      "probabilistic": [
+        {
+          "value": "0.9940",
+          "context": "is `≈ 1` *automatically* — observed 0.9940 vs a threshold of 0.497. The registered",
+          "where": "§3.3¶2",
+          "eid": "probabilistic::3.3#p2"
+        },
+        {
+          "value": "0.9940",
+          "context": "0.9940` with `P_rest = 0.9935`, against a kill threshold of `0.5×P_rest = 0.497`. A",
+          "where": "§5¶4",
+          "eid": "probabilistic::5#p4"
+        }
+      ]
+    },
+    "1.229": {
+      "algebraic": [
+        {
+          "value": "1.229",
+          "context": "The fine edge value 1.229 (condition-grain gap between content-only and",
+          "where": "§2.2",
+          "eid": "algebraic::2.2"
+        }
+      ]
+    },
+    "1.24": {
+      "zeroclaw": [
+        {
+          "value": "1.24",
+          "context": "- Wave-1 replication: slope 1.24 [+0.334, +1.979] — **excludes 0**, but does not beat",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        },
+        {
+          "value": "1.24",
+          "context": "**Object:** the positive S slopes (1.41 / 1.24, class-residual 0.695 excluding 0) are",
+          "where": "§4.2¶1",
+          "eid": "zeroclaw::4.2#p1"
+        }
+      ],
+      "probabilistic": [
+        {
+          "value": "1.24",
+          "context": "(1.41 / 1.24, both waves) is the expected signature of **selection**, not of collapse.",
+          "where": "§3.3¶3",
+          "eid": "probabilistic::3.3#p3"
+        }
+      ]
+    },
+    "1.41": {
+      "zeroclaw": [
+        {
+          "value": "1.41",
+          "context": "- Primary (wave-2): slope 1.41 [−0.313, +2.797] — **contains 0**, x-invariant.",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        },
+        {
+          "value": "1.41",
+          "context": "**Object:** the positive S slopes (1.41 / 1.24, class-residual 0.695 excluding 0) are",
+          "where": "§4.2¶1",
+          "eid": "zeroclaw::4.2#p1"
+        }
+      ],
+      "probabilistic": [
+        {
+          "value": "1.41",
+          "context": "(1.41 / 1.24, both waves) is the expected signature of **selection**, not of collapse.",
+          "where": "§3.3¶3",
+          "eid": "probabilistic::3.3#p3"
+        }
+      ]
+    },
+    "1.473": {
+      "zeroclaw": [
+        {
+          "value": "1.473",
+          "context": "- Wave-2 class-residual: slope 0.695 [0.119, 1.473] — **excludes 0** while the",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        }
+      ],
+      "probabilistic": [
+        {
+          "value": "1.473",
+          "context": "(wave-2, [0.119, 1.473]) is the same knife-edge the slope run's tripwire caught —",
+          "where": "§3.3¶3",
+          "eid": "probabilistic::3.3#p3"
+        }
+      ]
+    },
+    "1.979": {
+      "zeroclaw": [
+        {
+          "value": "1.979",
+          "context": "- Wave-1 replication: slope 1.24 [+0.334, +1.979] — **excludes 0**, but does not beat",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        }
+      ]
+    },
+    "2.797": {
+      "zeroclaw": [
+        {
+          "value": "2.797",
+          "context": "- Primary (wave-2): slope 1.41 [−0.313, +2.797] — **contains 0**, x-invariant.",
+          "where": "§2.2",
+          "eid": "zeroclaw::2.2"
+        }
+      ]
+    }
+  }
+}
