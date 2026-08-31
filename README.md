@@ -1,5 +1,9 @@
 # A2A-native-notebookLM
 
+<p align="center">
+  <img src="assets/images/hero.jpg" width="720" alt="One open ledger-book glowing amber on a wheelhouse chart desk at night, distant boats answering through dark windows with small warm lanterns">
+</p>
+
 <div align="center">
 
 ### The Fleet's Cognitive Command Center
