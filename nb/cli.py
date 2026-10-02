@@ -5,6 +5,7 @@ import sys
 from pathlib import Path
 
 from nb.engine import CycleError, Sheet
+from nb.sp import main as sp_main
 
 
 def main(argv=None):
@@ -15,7 +16,11 @@ def main(argv=None):
     a.add_argument("--code", required=True, help="JSON literal (const) or python source (py/port)")
     sub.add_parser("eval"); sub.add_parser("get").add_argument("id")
     sub.add_parser("graph"); sub.add_parser("receipts")
+    sp = sub.add_parser("sp", help="the scratchpaper (delegates: nb.sp)")
+    sp.add_argument("spargs", nargs=argparse.REMAINDER)
     args = p.parse_args(argv)
+    if args.cmd == "sp":
+        sys.exit(sp_main(args.spargs))
     sheet = Sheet(Path.cwd())
     try:
         if args.cmd == "add":
