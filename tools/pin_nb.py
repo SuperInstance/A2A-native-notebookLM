@@ -7,6 +7,12 @@ L3 every cell carries a receipt after eval.
 L4 port cells book honest verdicts: correct port PASS, buggy port FAIL
     with mismatches (never hidden).
 L5 the demo sheet's verdict row: softmax PASS, buggy-softmax FAIL.
+L7 the mutant op grades spec strength: a deterministic battery of output
+    corruptions + input transforms is run against cand; coverage =
+    killed/total is the spec-coverage metric. STRICT length+1e-6 compare
+    (port's zip truncates); survived mutants are named; a survived
+    input-transform can be a correct invariance (metric reports, humans
+    interpret); port_zip_holes names what lenient comparison would miss.
 """
 import json
 import shutil
@@ -126,6 +132,71 @@ def main():
     pin("L2 receipts deterministic across reload", r1 == r2)
     # L3 coverage
     pin("L3 every cell receipted", all(c in r2 for c in Sheet(root).cells))
+
+    # ---- L7: the mutant op grades spec strength (spec-coverage metric)
+    s4 = Sheet(root)
+    s4.add("sm_mut", ["softmax_spec"], "mutant",
+           "import math\n"
+           "def cand(v):\n"
+           "    m=max(v); e=[math.exp(x-m) for x in v]; t=sum(e)\n"
+           "    return [x/t for x in e]")
+    try:
+        s4.eval()
+        m = s4.values.get("sm_mut")
+    except ValueError as e:  # FAIL-first path: 'unknown op mutant' on pre-tip
+        m = None
+        print(f"    (mutant op raised on this tree: {e})")
+    pin("L7a mutant battery runs: 12 mutants, all named with status",
+        m is not None and m["n_mutants"] == 12
+        and all({"name", "status"} <= set(r) for r in m["mutants"]))
+    out_rows = ({r["name"]: r for r in m["mutants"] if r["class"] == "output"}
+                if m is not None else {})
+    pin("L7b strong spec kills every output corruption",
+        m is not None and all(out_rows[n]["status"] == "killed"
+            for n in ["zero", "const1", "negate", "scale", "offset",
+                      "reverse", "head_dup", "drop_last", "nan_inj"]),
+        f"coverage={m['coverage'] if m else 'n/a'}")
+    pin("L7c softmax's shift-invariance SURVIVES and is named (not hidden)",
+        m is not None and "shift_input" in m["weakest"] and "scale_input" not in m["weakest"])
+    pin("L7d strict length compare exposes what port's zip would miss",
+        m is not None and "drop_last" in m["port_zip_holes"]
+        and out_rows["drop_last"]["status"] == "killed")
+
+    # weak spec grades LOWER on the same battery: metric moves with spec quality
+    s5 = Sheet(root)
+    s5.add("degenerate_spec", [], "const", json.dumps(
+        [[[0.0, 0.0, 0.0], [0.33333333, 0.33333333, 0.33333333]]]))
+    s5.add("sm_mut_weak", ["degenerate_spec"], "mutant",
+           "import math\n"
+           "def cand(v):\n"
+           "    m=max(v); e=[math.exp(x-m) for x in v]; t=sum(e)\n"
+           "    return [x/t for x in e]")
+    try:
+        s5.eval()
+        w = s5.values.get("sm_mut_weak")
+    except ValueError:
+        w = None  # FAIL-first path: mutant op absent on this tree
+    pin("L7e same battery grades a degenerate spec lower (coverage drops)",
+        w is not None and m is not None and w["coverage"] < m["coverage"]
+        and "reverse" in w["weakest"] and "head_dup" in w["weakest"],
+        f"weak={w['coverage'] if w else 'n/a'} vs strong={m['coverage'] if m else 'n/a'}")
+
+    # L7f memo cascade + receipt determinism cover the mutant op too
+    log = []
+    Sheet(root).eval(eval_log=log)
+    pin("L7f mutant cells memoize like every other cell", log == [], f"re-evaled={log}")
+    r3 = Sheet(root).receipts
+    pin("L7g mutant receipts deterministic across reload", r3 == Sheet(root).receipts)
+
+    # L7h honest error: mutant op without a spec dep is refused clearly
+    s6 = Sheet(root)
+    s6.add("orphan_mut", [], "mutant", "def cand(v):\n    return v")
+    try:
+        s6.eval()
+        pin("L7h mutant without spec dep refused clearly", False)
+    except ValueError as e:
+        pin("L7h mutant without spec dep refused clearly", "spec cell as first dep" in str(e))
+    s6.cells.pop("orphan_mut")
     print(("GREEN: nb is a receipted spreadsheet engine" if all(r[1] for r in results)
            else "RED: pins failed"), f"({sum(r[1] for r in results)}/{len(results)})")
     return 0 if all(r[1] for r in results) else 1

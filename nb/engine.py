@@ -121,6 +121,84 @@ class Sheet:
                     fails.append({"vec": vec, "want": want, "got": got})
             return {"verdict": "FAIL" if fails else "PASS", "n_checked": len(spec),
                     "n_failed": len(fails), "mismatches": fails[:4]}
+        if c.op == "mutant":
+            # mutant op: grade SPEC strength (spec-coverage metric). FIRST dep
+            # is the spec cell (test vectors); code defines cand (reference
+            # impl). A deterministic battery of output corruptions +
+            # input transforms is run against cand; a mutant is 'killed' when
+            # the spec vectors distinguish it from cand's true output under
+            # STRICT comparison (exact length + 1e-6 — port's zip compare
+            # silently truncates length, so the mutant op also names the
+            # mutants that lenient comparison would miss). Survived mutants
+            # are named so the spec author knows what the spec cannot see.
+            # coverage = killed/total is a FLOOR, not a verdict: a survived
+            # input-transform can be a correct invariance of the function
+            # (e.g. softmax is shift-invariant) — the metric reports, humans
+            # interpret.
+            if not c.deps:
+                raise ValueError(f"{c.id}: mutant op requires the spec cell as first dep")
+            spec = inputs[c.deps[0]]
+            g = {"inputs": inputs, "math": __import__("math")}
+            exec(c.code, g)
+            cand = g.get("cand")
+            if not callable(cand):
+                raise ValueError(f"{c.id}: mutant op code must define cand(v)")
+            out_mutants = [
+                ("zero", "output", lambda o: [0.0 for _ in o]),
+                ("const1", "output", lambda o: [1.0 for _ in o]),
+                ("negate", "output", lambda o: [-x for x in o]),
+                ("scale", "output", lambda o: [x * 1.0001 for x in o]),
+                ("offset", "output", lambda o: [x + 0.001 for x in o]),
+                ("reverse", "output", lambda o: list(reversed(o))),
+                ("head_dup", "output", lambda o: [o[0] for _ in o]),
+                ("drop_last", "output", lambda o: o[:-1]),
+                ("nan_inj", "output", lambda o: [float("nan")] + list(o[1:])),
+            ]
+            in_mutants = [
+                ("shift_input", "input-transform", lambda v: [x + 5.0 for x in v]),
+                ("scale_input", "input-transform", lambda v: [x * 2.0 for x in v]),
+                ("negate_input", "input-transform", lambda v: [-x for x in v]),
+            ]
+
+            def strict_eq(got, want):
+                got = list(got)
+                want = list(want)
+                if len(got) != len(want):
+                    return False  # exact length: zip-compare would miss this
+                return all(abs(a - b) <= 1e-6 for a, b in zip(got, want))
+
+            rows, killed = [], 0
+            for name, klass, fn in out_mutants + in_mutants:
+                fails = 0
+                zip_hole = False  # killed-by-strict but zip-lenient would pass
+                for vec, want in spec:
+                    try:
+                        got = cand(fn(list(vec))) if klass == "input-transform" \
+                            else fn(list(cand(vec)))
+                    except Exception:
+                        fails += 1  # a mutant that crashes is killed, evidence booked
+                        continue
+                    try:
+                        json.dumps(got)  # witness law applies to mutants too
+                    except (TypeError, ValueError):
+                        fails += 1
+                        continue
+                    got, want = list(got), list(want)
+                    if len(got) != len(want) and all(  # port's zip truncates:
+                            abs(a - b) <= 1e-6 for a, b in zip(got, want)):
+                        zip_hole = True  # strict kills, lenient would pass
+                    if not strict_eq(got, want):
+                        fails += 1
+                status = "killed" if fails else "survived"
+                killed += status == "killed"
+                rows.append({"name": name, "class": klass, "status": status,
+                             "n_failed": fails, "port_zip_would_miss": zip_hole})
+            n = len(rows)
+            return {"n_mutants": n, "n_killed": killed, "n_survived": n - killed,
+                    "coverage": round(killed / n, 4), "mutants": rows,
+                    "weakest": [r["name"] for r in rows if r["status"] == "survived"],
+                    "port_zip_holes": [r["name"] for r in rows
+                                       if r["port_zip_would_miss"]]}
         raise ValueError(f"unknown op {c.op}")
 
     def graph(self):

@@ -43,11 +43,30 @@ booked as evidence. **The spec is the product; cells are its editors.**
 ## Status
 
 - `nb/engine.py` + `nb/cli.py` + `nb/mcp_server.py` — stdlib only.
-- `tools/pin_nb.py` — 11 FAIL-first pins, all GREEN (cycle refusal, memo
-  cascade, receipt determinism, coverage, honest verdicts, witness law).
+- `tools/pin_nb.py` — 19 FAIL-first pins, all GREEN (cycle refusal, memo
+  cascade, receipt determinism, coverage, honest verdicts, witness law,
+  mutant-battery spec grading).
 - Legacy tree (open_notebook, api/, vessels) untouched on this branch.
 - Queued seams: quilt-canvas-tui live board (read bridge/controller.mjs
   unix-socket protocol; render cell DAG + port verdicts as quilt blocks);
   pip packaging (`pyproject` + `pip install -e .` removes the PYTHONPATH
-  shim in pins); a `mutant` op (auto-generate port mutants to grade spec
-  strength — spec-coverage as a first-class metric).
+  shim in pins).
+
+## The mutant op (spec-coverage as a first-class metric)
+
+A `mutant` cell binds a SPEC cell (first dep) + defines `cand` (reference
+impl) in code, and grades the SPEC: a deterministic battery of 9 output
+corruptions (zero, const, negate, scale, offset, reverse, head_dup,
+drop_last, nan_inj) + 3 input transforms (shift/scale/negate) is run,
+each marked killed/survived under STRICT comparison (exact length + 1e-6).
+`coverage = killed/total` moves with spec quality: the demo softmax spec
+scores 0.9167; a degenerate one-vector spec scores 0.5833 with the
+surviving mutants named (`weakest`). Honest boundaries, by design:
+- coverage is a FLOOR, not a verdict — a survived input-transform can be a
+  correct invariance of the function (softmax legitimately survives
+  `shift_input`); the metric reports, humans interpret.
+- `port_zip_holes` names mutants the port op's zip-compare would silently
+  pass (`drop_last`: strict length catches it, zip truncates and passes).
+  Booked as evidence; port semantics unchanged on this branch.
+- a mutant that crashes or emits non-JSON-plain output is killed with the
+  evidence booked (witness law applies to mutants too).

@@ -12,7 +12,7 @@ from pathlib import Path
 from nb.engine import CycleError, Sheet
 
 TOOLS = [
-    {"name": "nb_add", "description": "add a cell (op: const|py|port) to the sheet",
+    {"name": "nb_add", "description": "add a cell (op: const|py|port|mutant) to the sheet",
      "inputSchema": {"type": "object", "properties": {
          "id": {"type": "string"}, "deps": {"type": "array", "items": {"type": "string"}},
          "op": {"type": "string"}, "code": {"type": "string"}}, "required": ["id", "op", "code"]}},
