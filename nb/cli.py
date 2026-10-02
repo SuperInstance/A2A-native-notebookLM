@@ -11,7 +11,7 @@ def main(argv=None):
     p = argparse.ArgumentParser(prog="nb", description="spreadsheet-logic notebook (headless)")
     sub = p.add_subparsers(dest="cmd", required=True)
     a = sub.add_parser("add"); a.add_argument("id"); a.add_argument("--deps", default="")
-    a.add_argument("--op", required=True, choices=["const", "py", "port"])
+    a.add_argument("--op", required=True, choices=["const", "py", "port", "mutant"])
     a.add_argument("--code", required=True, help="JSON literal (const) or python source (py/port)")
     sub.add_parser("eval"); sub.add_parser("get").add_argument("id")
     sub.add_parser("graph"); sub.add_parser("receipts")
